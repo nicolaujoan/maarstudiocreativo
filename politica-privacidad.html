@@ -66,6 +66,9 @@
             gap: 1rem;
             margin-left: -12rem;
             position: relative;
+            min-height: 80px;
+            opacity: 0;
+            animation: fadeInLogo 0.2s ease-in forwards;
         }
 
         .logo img {
@@ -75,6 +78,13 @@
             position: relative;
             transform: scale(2.5);
             transform-origin: center;
+            flex-shrink: 0;
+        }
+
+        @keyframes fadeInLogo {
+            to {
+                opacity: 1;
+            }
         }
 
         .nav-links {
@@ -591,6 +601,13 @@
         </svg>
     </a>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        // Mobile menu toggle
-        const hamburger = document.getElementById('hamburger
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => { navLinks.classList.remove('active'); });
+        });
+    </script>
+</body>
+</html>
