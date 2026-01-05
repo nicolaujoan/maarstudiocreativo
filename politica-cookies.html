@@ -121,6 +121,35 @@
             transition: 0.3s;
         }
 
+        .language-switcher {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 2px solid var(--off-white);
+            color: var(--off-white);
+            padding: 0.4rem 0.8rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background: var(--beige-sandy);
+            border-color: var(--beige-sandy);
+            color: var(--soft-charcoal);
+        }
+
+        .lang-btn.active {
+            background: var(--off-white);
+            color: var(--soft-cocoa);
+        }
+
         /* Hero Section */
         .hero {
             margin-top: 70px;
@@ -530,122 +559,126 @@
                 <span></span>
             </div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html#inicio">Inicio</a></li>
-                <li><a href="index.html#servicios">Servicios</a></li>
-                <li><a href="index.html#nosotros">Nosotros</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="index.html#inicio" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="index.html#servicios" data-i18n="nav_servicios">Servicios</a></li>
+                <li><a href="index.html#nosotros" data-i18n="nav_nosotros">Nosotros</a></li>
+                <li><a href="index.html#contacto" data-i18n="nav_contacto">Contacto</a></li>
+                <li class="language-switcher">
+                    <button class="lang-btn active" data-lang="es" onclick="setLanguage('es')">ES</button>
+                    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+                </li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Política de Cookies</h1>
-        <p>Última actualización: Diciembre 2024</p>
+        <h1 data-i18n="cookies_title">Política de Cookies</h1>
+        <p data-i18n="cookies_updated">Última actualización: Diciembre 2024</p>
     </section>
 
     <!-- Content Section -->
     <section class="content-section">
         <div class="content-container">
             <div class="intro-box">
-                <p>Esta Política de Cookies explica qué son las cookies y cómo las utilizamos en <strong>maarstudiocreativo.com</strong>. Le recomendamos leer esta política para comprender qué tipo de cookies utilizamos, la información que recopilamos mediante cookies y cómo se utiliza esa información.</p>
-                <p style="margin-bottom: 0;"><strong>Las cookies nos permiten mejorar su experiencia de navegación y personalizar el contenido que le mostramos.</strong></p>
+                <p data-i18n="cookies_intro_p1">Esta Política de Cookies explica qué son las cookies y cómo las utilizamos en <strong>maarstudiocreativo.com</strong>. Le recomendamos leer esta política para comprender qué tipo de cookies utilizamos, la información que recopilamos mediante cookies y cómo se utiliza esa información.</p>
+                <p style="margin-bottom: 0;" data-i18n="cookies_intro_p2"><strong>Las cookies nos permiten mejorar su experiencia de navegación y personalizar el contenido que le mostramos.</strong></p>
             </div>
 
-            <h2>¿Qué son las cookies?</h2>
-            <p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo (ordenador, tableta o teléfono móvil) cuando visita un sitio web. Las cookies permiten que el sitio web reconozca su dispositivo y recuerde información sobre su visita, como su idioma preferido y otras configuraciones.</p>
+            <h2 data-i18n="cookies_h2_1">¿Qué son las cookies?</h2>
+            <p data-i18n="cookies_p1">Las cookies son pequeños archivos de texto que se almacenan en su dispositivo (ordenador, tableta o teléfono móvil) cuando visita un sitio web. Las cookies permiten que el sitio web reconozca su dispositivo y recuerde información sobre su visita, como su idioma preferido y otras configuraciones.</p>
 
-            <h2>¿Cómo utilizamos las cookies?</h2>
-            <p>Utilizamos cookies para diversos propósitos, que incluyen:</p>
+            <h2 data-i18n="cookies_h2_2">¿Cómo utilizamos las cookies?</h2>
+            <p data-i18n="cookies_p2">Utilizamos cookies para diversos propósitos, que incluyen:</p>
             <ul>
-                <li><strong>Cookies esenciales:</strong> Necesarias para el funcionamiento básico del sitio web.</li>
-                <li><strong>Cookies de rendimiento:</strong> Nos ayudan a entender cómo los visitantes interactúan con nuestro sitio web.</li>
-                <li><strong>Cookies funcionales:</strong> Permiten que el sitio web proporcione funcionalidad mejorada y personalización.</li>
-                <li><strong>Cookies de publicidad:</strong> Se utilizan para mostrar anuncios relevantes para usted.</li>
+                <li data-i18n="cookies_li1"><strong>Cookies esenciales:</strong> Necesarias para el funcionamiento básico del sitio web.</li>
+                <li data-i18n="cookies_li2"><strong>Cookies de rendimiento:</strong> Nos ayudan a entender cómo los visitantes interactúan con nuestro sitio web.</li>
+                <li data-i18n="cookies_li3"><strong>Cookies funcionales:</strong> Permiten que el sitio web proporcione funcionalidad mejorada y personalización.</li>
+                <li data-i18n="cookies_li4"><strong>Cookies de publicidad:</strong> Se utilizan para mostrar anuncios relevantes para usted.</li>
             </ul>
 
-            <h2>Tipos de cookies que utilizamos</h2>
-            
-            <h3>Cookies propias</h3>
-            <p>Son cookies establecidas directamente por nuestro sitio web en su dispositivo.</p>
+            <h2 data-i18n="cookies_h2_3">Tipos de cookies que utilizamos</h2>
+
+            <h3 data-i18n="cookies_h3_1">Cookies propias</h3>
+            <p data-i18n="cookies_p3">Son cookies establecidas directamente por nuestro sitio web en su dispositivo.</p>
             
             <table class="cookie-table">
                 <thead>
                     <tr>
-                        <th>Nombre</th>
-                        <th>Propósito</th>
-                        <th>Duración</th>
+                        <th data-i18n="cookies_table1_th1">Nombre</th>
+                        <th data-i18n="cookies_table1_th2">Propósito</th>
+                        <th data-i18n="cookies_table1_th3">Duración</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>session_id</td>
-                        <td>Mantiene su sesión activa durante su visita</td>
-                        <td>Sesión</td>
+                        <td data-i18n="cookies_table1_td1">session_id</td>
+                        <td data-i18n="cookies_table1_td2">Mantiene su sesión activa durante su visita</td>
+                        <td data-i18n="cookies_table1_td3">Sesión</td>
                     </tr>
                     <tr>
-                        <td>cookie_consent</td>
-                        <td>Registra su preferencia de cookies</td>
-                        <td>1 año</td>
+                        <td data-i18n="cookies_table1_td4">cookie_consent</td>
+                        <td data-i18n="cookies_table1_td5">Registra su preferencia de cookies</td>
+                        <td data-i18n="cookies_table1_td6">1 año</td>
                     </tr>
                     <tr>
-                        <td>lang_preference</td>
-                        <td>Guarda su preferencia de idioma</td>
-                        <td>6 meses</td>
+                        <td data-i18n="cookies_table1_td7">lang_preference</td>
+                        <td data-i18n="cookies_table1_td8">Guarda su preferencia de idioma</td>
+                        <td data-i18n="cookies_table1_td9">6 meses</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h3>Cookies de terceros</h3>
-            <p>Son cookies establecidas por dominios distintos al nuestro. Utilizamos servicios de terceros que pueden establecer cookies en su dispositivo:</p>
+            <h3 data-i18n="cookies_h3_2">Cookies de terceros</h3>
+            <p data-i18n="cookies_p4">Son cookies establecidas por dominios distintos al nuestro. Utilizamos servicios de terceros que pueden establecer cookies en su dispositivo:</p>
             
             <table class="cookie-table">
                 <thead>
                     <tr>
-                        <th>Servicio</th>
-                        <th>Propósito</th>
-                        <th>Más información</th>
+                        <th data-i18n="cookies_table2_th1">Servicio</th>
+                        <th data-i18n="cookies_table2_th2">Propósito</th>
+                        <th data-i18n="cookies_table2_th3">Más información</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Google Analytics</td>
-                        <td>Análisis del tráfico web y comportamiento de usuarios</td>
-                        <td><a href="https://policies.google.com/privacy" target="_blank">Política de privacidad</a></td>
+                        <td data-i18n="cookies_table2_td1">Google Analytics</td>
+                        <td data-i18n="cookies_table2_td2">Análisis del tráfico web y comportamiento de usuarios</td>
+                        <td><a href="https://policies.google.com/privacy" target="_blank" data-i18n="cookies_table2_td3">Política de privacidad</a></td>
                     </tr>
                     <tr>
-                        <td>Google Fonts</td>
-                        <td>Carga de tipografías para mejorar el diseño</td>
-                        <td><a href="https://policies.google.com/privacy" target="_blank">Política de privacidad</a></td>
+                        <td data-i18n="cookies_table2_td4">Google Fonts</td>
+                        <td data-i18n="cookies_table2_td5">Carga de tipografías para mejorar el diseño</td>
+                        <td><a href="https://policies.google.com/privacy" target="_blank" data-i18n="cookies_table2_td6">Política de privacidad</a></td>
                     </tr>
                 </tbody>
             </table>
 
-            <h2>¿Cómo controlar las cookies?</h2>
-            <p>Puede controlar y/o eliminar las cookies según desee. Puede eliminar todas las cookies que ya están en su ordenador y puede configurar la mayoría de los navegadores para evitar que se coloquen. Sin embargo, si hace esto, es posible que tenga que ajustar manualmente algunas preferencias cada vez que visite un sitio y algunos servicios y funcionalidades pueden no funcionar.</p>
+            <h2 data-i18n="cookies_h2_4">¿Cómo controlar las cookies?</h2>
+            <p data-i18n="cookies_p5">Puede controlar y/o eliminar las cookies según desee. Puede eliminar todas las cookies que ya están en su ordenador y puede configurar la mayoría de los navegadores para evitar que se coloquen. Sin embargo, si hace esto, es posible que tenga que ajustar manualmente algunas preferencias cada vez que visite un sitio y algunos servicios y funcionalidades pueden no funcionar.</p>
 
-            <h3>Configuración del navegador</h3>
-            <p>La mayoría de los navegadores web permiten controlar las cookies a través de la configuración del navegador. Para obtener más información sobre cómo administrar cookies en los navegadores más populares, visite los siguientes enlaces:</p>
+            <h3 data-i18n="cookies_h3_3">Configuración del navegador</h3>
+            <p data-i18n="cookies_p6">La mayoría de los navegadores web permiten controlar las cookies a través de la configuración del navegador. Para obtener más información sobre cómo administrar cookies en los navegadores más populares, visite los siguientes enlaces:</p>
             <ul>
-                <li><a href="https://support.google.com/chrome/answer/95647" target="_blank">Google Chrome</a></li>
-                <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank">Mozilla Firefox</a></li>
-                <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank">Safari</a></li>
-                <li><a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank">Microsoft Edge</a></li>
-                <li><a href="https://help.opera.com/en/latest/web-preferences/#cookies" target="_blank">Opera</a></li>
+                <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" data-i18n="cookies_browser_li1">Google Chrome</a></li>
+                <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" data-i18n="cookies_browser_li2">Mozilla Firefox</a></li>
+                <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" data-i18n="cookies_browser_li3">Safari</a></li>
+                <li><a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" data-i18n="cookies_browser_li4">Microsoft Edge</a></li>
+                <li><a href="https://help.opera.com/en/latest/web-preferences/#cookies" target="_blank" data-i18n="cookies_browser_li5">Opera</a></li>
             </ul>
 
-            <h2>Consentimiento</h2>
-            <p>Al utilizar nuestro sitio web, usted acepta el uso de cookies de acuerdo con esta Política de Cookies. Si no está de acuerdo con el uso de cookies, puede deshabilitarlas en la configuración de su navegador, aunque esto puede afectar a su experiencia en el sitio web.</p>
+            <h2 data-i18n="cookies_h2_5">Consentimiento</h2>
+            <p data-i18n="cookies_p7">Al utilizar nuestro sitio web, usted acepta el uso de cookies de acuerdo con esta Política de Cookies. Si no está de acuerdo con el uso de cookies, puede deshabilitarlas en la configuración de su navegador, aunque esto puede afectar a su experiencia en el sitio web.</p>
 
-            <h2>Cambios en esta política</h2>
-            <p>Podemos actualizar esta Política de Cookies periódicamente. Le notificaremos de cualquier cambio publicando la nueva política en esta página y actualizando la fecha de "Última actualización" en la parte superior de esta página.</p>
+            <h2 data-i18n="cookies_h2_6">Cambios en esta política</h2>
+            <p data-i18n="cookies_p8">Podemos actualizar esta Política de Cookies periódicamente. Le notificaremos de cualquier cambio publicando la nueva política en esta página y actualizando la fecha de "Última actualización" en la parte superior de esta página.</p>
 
-            <h2>Más información</h2>
-            <p>Si tiene alguna pregunta sobre nuestra Política de Cookies o sobre cómo utilizamos las cookies, no dude en ponerse en contacto con nosotros.</p>
+            <h2 data-i18n="cookies_h2_7">Más información</h2>
+            <p data-i18n="cookies_p9">Si tiene alguna pregunta sobre nuestra Política de Cookies o sobre cómo utilizamos las cookies, no dude en ponerse en contacto con nosotros.</p>
 
             <div class="contact-box">
-                <h3>Información de contacto</h3>
-                <p>Para cualquier consulta sobre esta Política de Cookies, puede contactarnos en:</p>
+                <h3 data-i18n="cookies_contact_title">Información de contacto</h3>
+                <p data-i18n="cookies_contact_p">Para cualquier consulta sobre esta Política de Cookies, puede contactarnos en:</p>
                 <a href="/cdn-cgi/l/email-protection#84edeae2ebc4e5f1f6e5e1f7f0f1e0edebe7f6e1e5f0edf2ebaae7ebe9"><span class="__cf_email__" data-cfemail="335a5d555c735246415256404746575a5c50415652475a455c1d505c5e">[email&#160;protected]</span></a>
             </div>
         </div>
@@ -656,19 +689,19 @@
         <div class="footer-content">
             <div class="footer-about">
                 <h3>Maar Studio Creativo</h3>
-                <p>Transformamos marcas a través del diseño, la estrategia y la creatividad. Tu visión, nuestra pasión.</p>
+                <p data-i18n="footer_about_desc">Transformamos marcas a través del diseño, la estrategia y la creatividad. Tu visión, nuestra pasión.</p>
             </div>
             <div class="footer-links">
-                <h4>Enlaces</h4>
+                <h4 data-i18n="footer_links_title">Enlaces</h4>
                 <ul>
-                    <li><a href="index.html#servicios">Servicios</a></li>
-                    <li><a href="index.html#nosotros">Nosotros</a></li>
-                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
-                    <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                    <li><a href="index.html#servicios" data-i18n="nav_servicios">Servicios</a></li>
+                    <li><a href="index.html#nosotros" data-i18n="nav_nosotros">Nosotros</a></li>
+                    <li><a href="politica-privacidad.html" data-i18n="footer_privacy">Política de Privacidad</a></li>
+                    <li><a href="politica-cookies.html" data-i18n="footer_cookies">Política de Cookies</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <h4>Contacto</h4>
+                <h4 data-i18n="footer_contact_title">Contacto</h4>
                 <div class="contact-icons">
                     <a href="https://wa.me/34608463878" target="_blank" aria-label="WhatsApp">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
@@ -689,7 +722,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Maar Studio Creativo. Todos los derechos reservados. | <a href="politica-privacidad.html">Política de Privacidad</a> | <a href="politica-cookies.html">Política de Cookies</a></p>
+            <p>&copy; 2024 Maar Studio Creativo. <span data-i18n="footer_copyright">Todos los derechos reservados.</span> | <a href="politica-privacidad.html" data-i18n="footer_privacy">Política de Privacidad</a> | <a href="politica-cookies.html" data-i18n="footer_cookies">Política de Cookies</a></p>
         </div>
     </footer>
 
@@ -700,6 +733,7 @@
         </svg>
     </a>
 
+    <script src="translations.js"></script>
     <script>
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('nav-links');

@@ -120,6 +120,35 @@
             transition: 0.3s;
         }
 
+        .language-switcher {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 2px solid var(--off-white);
+            color: var(--off-white);
+            padding: 0.4rem 0.8rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background: var(--beige-sandy);
+            border-color: var(--beige-sandy);
+            color: var(--soft-charcoal);
+        }
+
+        .lang-btn.active {
+            background: var(--off-white);
+            color: var(--soft-cocoa);
+        }
+
         /* Hero Section */
         .hero {
             margin-top: 70px;
@@ -488,65 +517,69 @@
                 <span></span>
             </div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html#inicio">Inicio</a></li>
-                <li><a href="index.html#servicios">Servicios</a></li>
-                <li><a href="index.html#nosotros">Nosotros</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="index.html#inicio" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="index.html#servicios" data-i18n="nav_servicios">Servicios</a></li>
+                <li><a href="index.html#nosotros" data-i18n="nav_nosotros">Nosotros</a></li>
+                <li><a href="index.html#contacto" data-i18n="nav_contacto">Contacto</a></li>
+                <li class="language-switcher">
+                    <button class="lang-btn active" data-lang="es" onclick="setLanguage('es')">ES</button>
+                    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+                </li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Política de Privacidad</h1>
-        <p>Última actualización: Diciembre 2024</p>
+        <h1 data-i18n="privacy_title">Política de Privacidad</h1>
+        <p data-i18n="privacy_updated">Última actualización: Diciembre 2024</p>
     </section>
 
     <!-- Content Section -->
     <section class="content-section">
         <div class="content-container">
             <div class="intro-box">
-                <p>El sitio web <strong>maarstudiocreativo.com</strong> es propiedad de <strong>Maar Studio Creativo</strong>, que actúa como responsable del tratamiento de sus datos personales.</p>
-                <p>Hemos adoptado esta Política de Privacidad, que define cómo procesamos la información recopilada por maarstudiocreativo.com, además de las razones por las cuales debemos recopilar ciertos datos personales. Por lo tanto, es fundamental que lea esta Política de Privacidad antes de utilizar el sitio web maarstudiocreativo.com.</p>
-                <p style="margin-bottom: 0;"><strong>Nos preocupamos por sus datos personales y nos comprometemos a garantizar su confidencialidad y seguridad.</strong></p>
+                <p data-i18n="privacy_intro_p1">El sitio web <strong>maarstudiocreativo.com</strong> es propiedad de <strong>Maar Studio Creativo</strong>, que actúa como responsable del tratamiento de sus datos personales.</p>
+                <p data-i18n="privacy_intro_p2">Hemos adoptado esta Política de Privacidad, que define cómo procesamos la información recopilada por maarstudiocreativo.com, además de las razones por las cuales debemos recopilar ciertos datos personales. Por lo tanto, es fundamental que lea esta Política de Privacidad antes de utilizar el sitio web maarstudiocreativo.com.</p>
+                <p style="margin-bottom: 0;" data-i18n="privacy_intro_p3"><strong>Nos preocupamos por sus datos personales y nos comprometemos a garantizar su confidencialidad y seguridad.</strong></p>
             </div>
 
-            <h2>Información personal que recopilamos</h2>
-            <p>Cuando visita <strong>maarstudiocreativo.com</strong>, recopilamos automáticamente cierta información sobre su dispositivo, incluida información sobre su navegador web, dirección IP, zona horaria y algunas cookies instaladas en su dispositivo. Además, mientras navega por el sitio, recopilamos información sobre las páginas web o productos individuales que visita, los sitios web o términos de búsqueda que lo refirieron al sitio, y cómo interactúa con el sitio. Nos referimos a esta información recopilada automáticamente como "Información del dispositivo".</p>
-            <p>Asimismo, podríamos recopilar los datos personales que nos proporcione (incluyendo, entre otros, Nombre, Apellidos, Dirección, información de pago, etc.) durante el registro para poder cumplir con el acuerdo.</p>
+            <h2 data-i18n="privacy_h2_1">Información personal que recopilamos</h2>
+            <p data-i18n="privacy_p1">Cuando visita <strong>maarstudiocreativo.com</strong>, recopilamos automáticamente cierta información sobre su dispositivo, incluida información sobre su navegador web, dirección IP, zona horaria y algunas cookies instaladas en su dispositivo. Además, mientras navega por el sitio, recopilamos información sobre las páginas web o productos individuales que visita, los sitios web o términos de búsqueda que lo refirieron al sitio, y cómo interactúa con el sitio. Nos referimos a esta información recopilada automáticamente como "Información del dispositivo".</p>
+            <p data-i18n="privacy_p2">Asimismo, podríamos recopilar los datos personales que nos proporcione (incluyendo, entre otros, Nombre, Apellidos, Dirección, información de pago, etc.) durante el registro para poder cumplir con el acuerdo.</p>
 
-            <h2>¿Por qué procesamos sus datos?</h2>
-            <p>Nuestra máxima prioridad es la seguridad de los datos de los clientes. Por ello, solo procesamos los datos mínimos necesarios para mantener el funcionamiento del sitio web. La información recopilada automáticamente se utiliza únicamente para identificar posibles casos de abuso y establecer información estadística sobre el uso del sitio web. Esta información estadística no se agrupa de manera que pueda identificar a ningún usuario específico del sistema.</p>
-            <p>Puede visitar el sitio web sin decirnos quién es o sin revelar ninguna información que pueda identificarlo como un individuo específico. Sin embargo, si desea utilizar algunas funciones del sitio web, recibir nuestro boletín informativo o proporcionar otros detalles a través de un formulario, es posible que deba proporcionarnos datos personales, como su correo electrónico, nombre, apellidos, ciudad de residencia, organización o número de teléfono. Puede optar por no proporcionarnos sus datos personales, pero en ese caso, es posible que no pueda aprovechar algunas funciones del sitio web, como recibir nuestro boletín o contactarnos directamente desde el sitio.</p>
-            <p>Si tiene dudas sobre qué información es obligatoria, puede ponerse en contacto con nosotros en <a href="/cdn-cgi/l/email-protection#88e1e6eee7c8e9fdfae9edfbfcfdece1e7ebfaede9fce1fee7a6ebe7e5"><span class="__cf_email__" data-cfemail="6b02050d042b0a1e190a0e181f1e0f020408190e0a1f021d0445080406">[email&#160;protected]</span></a>.</p>
+            <h2 data-i18n="privacy_h2_2">¿Por qué procesamos sus datos?</h2>
+            <p data-i18n="privacy_p3">Nuestra máxima prioridad es la seguridad de los datos de los clientes. Por ello, solo procesamos los datos mínimos necesarios para mantener el funcionamiento del sitio web. La información recopilada automáticamente se utiliza únicamente para identificar posibles casos de abuso y establecer información estadística sobre el uso del sitio web. Esta información estadística no se agrupa de manera que pueda identificar a ningún usuario específico del sistema.</p>
+            <p data-i18n="privacy_p4">Puede visitar el sitio web sin decirnos quién es o sin revelar ninguna información que pueda identificarlo como un individuo específico. Sin embargo, si desea utilizar algunas funciones del sitio web, recibir nuestro boletín informativo o proporcionar otros detalles a través de un formulario, es posible que deba proporcionarnos datos personales, como su correo electrónico, nombre, apellidos, ciudad de residencia, organización o número de teléfono. Puede optar por no proporcionarnos sus datos personales, pero en ese caso, es posible que no pueda aprovechar algunas funciones del sitio web, como recibir nuestro boletín o contactarnos directamente desde el sitio.</p>
+            <p><span data-i18n="privacy_p5">Si tiene dudas sobre qué información es obligatoria, puede ponerse en contacto con nosotros en</span> <a href="/cdn-cgi/l/email-protection#88e1e6eee7c8e9fdfae9edfbfcfdece1e7ebfaede9fce1fee7a6ebe7e5"><span class="__cf_email__" data-cfemail="6b02050d042b0a1e190a0e181f1e0f020408190e0a1f021d0445080406">[email&#160;protected]</span></a>.</p>
 
-            <h2>Sus derechos</h2>
-            <p>Si es residente europeo, tiene los siguientes derechos relacionados con sus datos personales:</p>
+            <h2 data-i18n="privacy_h2_3">Sus derechos</h2>
+            <p data-i18n="privacy_p6">Si es residente europeo, tiene los siguientes derechos relacionados con sus datos personales:</p>
             <ul>
-                <li>Derecho a ser informado.</li>
-                <li>Derecho de acceso.</li>
-                <li>Derecho de rectificación.</li>
-                <li>Derecho de supresión.</li>
-                <li>Derecho a restringir el procesamiento.</li>
-                <li>Derecho a la portabilidad de los datos.</li>
-                <li>Derecho de oposición.</li>
-                <li>Derechos relacionados con la toma de decisiones automatizada y la elaboración de perfiles.</li>
+                <li data-i18n="privacy_li1">Derecho a ser informado.</li>
+                <li data-i18n="privacy_li2">Derecho de acceso.</li>
+                <li data-i18n="privacy_li3">Derecho de rectificación.</li>
+                <li data-i18n="privacy_li4">Derecho de supresión.</li>
+                <li data-i18n="privacy_li5">Derecho a restringir el procesamiento.</li>
+                <li data-i18n="privacy_li6">Derecho a la portabilidad de los datos.</li>
+                <li data-i18n="privacy_li7">Derecho de oposición.</li>
+                <li data-i18n="privacy_li8">Derechos relacionados con la toma de decisiones automatizada y la elaboración de perfiles.</li>
             </ul>
-            <p>Si desea ejercer estos derechos, contáctenos a través de la información proporcionada a continuación.</p>
-            <p>Además, si es residente europeo, procesamos su información para cumplir con los contratos que podamos tener con usted (por ejemplo, si realiza un pedido a través del sitio), o para perseguir nuestros intereses comerciales legítimos mencionados anteriormente. Asimismo, tenga en cuenta que su información puede transferirse fuera de Europa, incluyendo a Canadá y Estados Unidos.</p>
+            <p data-i18n="privacy_p7">Si desea ejercer estos derechos, contáctenos a través de la información proporcionada a continuación.</p>
+            <p data-i18n="privacy_p8">Además, si es residente europeo, procesamos su información para cumplir con los contratos que podamos tener con usted (por ejemplo, si realiza un pedido a través del sitio), o para perseguir nuestros intereses comerciales legítimos mencionados anteriormente. Asimismo, tenga en cuenta que su información puede transferirse fuera de Europa, incluyendo a Canadá y Estados Unidos.</p>
 
-            <h2>Enlaces a otros sitios web</h2>
-            <p>Nuestro sitio web puede contener enlaces a otros sitios web que no son propiedad ni están controlados por nosotros. Tenga en cuenta que no somos responsables de las prácticas de privacidad de dichos sitios web o terceros. Le recomendamos estar atento al salir de nuestro sitio web y leer las declaraciones de privacidad de cada sitio que pueda recopilar información personal.</p>
+            <h2 data-i18n="privacy_h2_4">Enlaces a otros sitios web</h2>
+            <p data-i18n="privacy_p9">Nuestro sitio web puede contener enlaces a otros sitios web que no son propiedad ni están controlados por nosotros. Tenga en cuenta que no somos responsables de las prácticas de privacidad de dichos sitios web o terceros. Le recomendamos estar atento al salir de nuestro sitio web y leer las declaraciones de privacidad de cada sitio que pueda recopilar información personal.</p>
 
-            <h2>Seguridad de la información</h2>
-            <p>Protegemos la información que nos proporciona en servidores informáticos en un entorno controlado y seguro, protegidos contra accesos no autorizados, uso o divulgación. Mantenemos salvaguardas administrativas, técnicas y físicas razonables para proteger contra el acceso, uso, modificación y divulgación no autorizados de los datos personales bajo nuestro control y custodia. Sin embargo, ninguna transmisión de datos a través de Internet o red inalámbrica puede garantizarse completamente segura.</p>
+            <h2 data-i18n="privacy_h2_5">Seguridad de la información</h2>
+            <p data-i18n="privacy_p10">Protegemos la información que nos proporciona en servidores informáticos en un entorno controlado y seguro, protegidos contra accesos no autorizados, uso o divulgación. Mantenemos salvaguardas administrativas, técnicas y físicas razonables para proteger contra el acceso, uso, modificación y divulgación no autorizados de los datos personales bajo nuestro control y custodia. Sin embargo, ninguna transmisión de datos a través de Internet o red inalámbrica puede garantizarse completamente segura.</p>
 
-            <h2>Divulgación legal</h2>
-            <p>Divulgaremos cualquier información que recopilemos, utilicemos o recibamos si es requerido o permitido por la ley, como para cumplir con una citación u otro proceso legal similar, y cuando creamos de buena fe que la divulgación es necesaria para proteger nuestros derechos, su seguridad o la seguridad de otros, investigar fraudes o responder a una solicitud gubernamental.</p>
+            <h2 data-i18n="privacy_h2_6">Divulgación legal</h2>
+            <p data-i18n="privacy_p11">Divulgaremos cualquier información que recopilemos, utilicemos o recibamos si es requerido o permitido por la ley, como para cumplir con una citación u otro proceso legal similar, y cuando creamos de buena fe que la divulgación es necesaria para proteger nuestros derechos, su seguridad o la seguridad de otros, investigar fraudes o responder a una solicitud gubernamental.</p>
 
             <div class="contact-box">
-                <h3>Información de contacto</h3>
-                <p>Si desea contactarnos para obtener más información sobre esta Política o para cualquier asunto relacionado con sus derechos y su información personal, puede enviar un correo electrónico a:</p>
+                <h3 data-i18n="privacy_contact_title">Información de contacto</h3>
+                <p data-i18n="privacy_contact_p">Si desea contactarnos para obtener más información sobre esta Política o para cualquier asunto relacionado con sus derechos y su información personal, puede enviar un correo electrónico a:</p>
                 <a href="/cdn-cgi/l/email-protection#563f383039163723243733252223323f3935243337223f20397835393b"><span class="__cf_email__" data-cfemail="dbb2b5bdb49bbaaea9babea8afaebfb2b4b8a9bebaafb2adb4f5b8b4b6">[email&#160;protected]</span></a>
             </div>
         </div>
@@ -557,19 +590,19 @@
         <div class="footer-content">
             <div class="footer-about">
                 <h3>Maar Studio Creativo</h3>
-                <p>Transformamos marcas a través del diseño, la estrategia y la creatividad. Tu visión, nuestra pasión.</p>
+                <p data-i18n="footer_about_desc">Transformamos marcas a través del diseño, la estrategia y la creatividad. Tu visión, nuestra pasión.</p>
             </div>
             <div class="footer-links">
-                <h4>Enlaces</h4>
+                <h4 data-i18n="footer_links_title">Enlaces</h4>
                 <ul>
-                    <li><a href="index.html#servicios">Servicios</a></li>
-                    <li><a href="index.html#nosotros">Nosotros</a></li>
-                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
-                    <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                    <li><a href="index.html#servicios" data-i18n="nav_servicios">Servicios</a></li>
+                    <li><a href="index.html#nosotros" data-i18n="nav_nosotros">Nosotros</a></li>
+                    <li><a href="politica-privacidad.html" data-i18n="footer_privacy">Política de Privacidad</a></li>
+                    <li><a href="politica-cookies.html" data-i18n="footer_cookies">Política de Cookies</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <h4>Contacto</h4>
+                <h4 data-i18n="footer_contact_title">Contacto</h4>
                 <div class="contact-icons">
                     <a href="https://wa.me/34608463878" target="_blank" aria-label="WhatsApp">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
@@ -590,7 +623,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Maar Studio Creativo. Todos los derechos reservados. | <a href="politica-privacidad.html">Política de Privacidad</a> | <a href="politica-cookies.html">Política de Cookies</a></p>
+            <p>&copy; 2024 Maar Studio Creativo. <span data-i18n="footer_copyright">Todos los derechos reservados.</span> | <a href="politica-privacidad.html" data-i18n="footer_privacy">Política de Privacidad</a> | <a href="politica-cookies.html" data-i18n="footer_cookies">Política de Cookies</a></p>
         </div>
     </footer>
 
@@ -601,6 +634,7 @@
         </svg>
     </a>
 
+    <script src="translations.js"></script>
     <script>
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('nav-links');

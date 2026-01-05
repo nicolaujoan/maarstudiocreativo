@@ -119,6 +119,35 @@
             transition: 0.3s;
         }
 
+        .language-switcher {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 2px solid var(--off-white);
+            color: var(--off-white);
+            padding: 0.4rem 0.8rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background: var(--beige-sandy);
+            border-color: var(--beige-sandy);
+            color: var(--soft-charcoal);
+        }
+
+        .lang-btn.active {
+            background: var(--off-white);
+            color: var(--soft-cocoa);
+        }
+
         .hero {
             margin-top: 70px;
             min-height: 70vh;
@@ -585,46 +614,50 @@
                 <span></span>
             </div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio" data-i18n="nav_inicio">Inicio</a></li>
+                <li><a href="#servicios" data-i18n="nav_servicios">Servicios</a></li>
+                <li><a href="#nosotros" data-i18n="nav_nosotros">Nosotros</a></li>
+                <li><a href="#contacto" data-i18n="nav_contacto">Contacto</a></li>
+                <li class="language-switcher">
+                    <button class="lang-btn active" data-lang="es" onclick="setLanguage('es')">ES</button>
+                    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+                </li>
             </ul>
         </div>
     </nav>
 
     <section class="hero" id="inicio">
         <div class="hero-content">
-            <h1>Contamos la historia de tu negocio para que te recuerden.</h1>
-            <p>Nada de publicar por publicar. Analizamos tu marca, encontramos tu lugar y estudiamos qué necesita y qué quiere tu público objetivo.<br><br>A partir de ahí, creamos estrategias de contenido pensadas para conectar de verdad con las personas adecuadas.</p>
+            <h1 data-i18n="hero_title">Contamos la historia de tu negocio para que te recuerden.</h1>
+            <p data-i18n="hero_description">Nada de publicar por publicar. Analizamos tu marca, encontramos tu lugar y estudiamos qué necesita y qué quiere tu público objetivo.<br><br>A partir de ahí, creamos estrategias de contenido pensadas para conectar de verdad con las personas adecuadas.</p>
         </div>
     </section>
 
     <section class="services-section fade-in" id="servicios">
-        <h2 class="section-title">Nuestros Servicios</h2>
+        <h2 class="section-title" data-i18n="services_title">Nuestros Servicios</h2>
         <div class="services-grid">
             <a href="#contacto" class="service-link">
                 <div class="service-card">
-                    <h3>Estrategias</h3>
-                    <p>Buscamos tu lugar en el mercado, investigamos sobre lo que necesita y quiere tu público objetivo y planteamos nuevas estrategias para conectar con ellos en base a estas inquietudes.</p>
+                    <h3 data-i18n="service1_title">Estrategias</h3>
+                    <p data-i18n="service1_desc">Buscamos tu lugar en el mercado, investigamos sobre lo que necesita y quiere tu público objetivo y planteamos nuevas estrategias para conectar con ellos en base a estas inquietudes.</p>
                 </div>
             </a>
             <a href="#contacto" class="service-link">
                 <div class="service-card">
-                    <h3>Diseño y Branding</h3>
-                    <p>Diseñamos la identidad visual completa, así como la guía de valores y el tono de comunicación de tu negocio. Creamos logos, catálogos, cartas, tarjetas de visita, y todo tipo de material comercial.</p>
+                    <h3 data-i18n="service2_title">Diseño y Branding</h3>
+                    <p data-i18n="service2_desc">Diseñamos la identidad visual completa, así como la guía de valores y el tono de comunicación de tu negocio. Creamos logos, catálogos, cartas, tarjetas de visita, y todo tipo de material comercial.</p>
                 </div>
             </a>
             <a href="#contacto" class="service-link">
                 <div class="service-card">
-                    <h3>Creación de contenido</h3>
-                    <p>Creamos todo tipo de contenido enfocado en redes sociales, marca personal y fotos de familia. Dinos qué quieres mostrar y te ofrecemos las mejores opciones audiovisuales, cuidando cada detalle para que tus ideas se transformen en realidad.</p>
+                    <h3 data-i18n="service3_title">Creación de contenido</h3>
+                    <p data-i18n="service3_desc">Creamos todo tipo de contenido enfocado en redes sociales, marca personal y fotos de familia. Dinos qué quieres mostrar y te ofrecemos las mejores opciones audiovisuales, cuidando cada detalle para que tus ideas se transformen en realidad.</p>
                 </div>
             </a>
             <a href="#contacto" class="service-link">
                 <div class="service-card">
-                    <h3>Gestión de redes sociales</h3>
-                    <p>Te ayudamos a crecer en redes sociales de forma estratégica. Gestionamos tus redes y campañas digitales para aumentar tu visibilidad y resultados. También ofrecemos mentorías personalizadas para que aprendas a gestionar tus redes.</p>
+                    <h3 data-i18n="service4_title">Gestión de redes sociales</h3>
+                    <p data-i18n="service4_desc">Te ayudamos a crecer en redes sociales de forma estratégica. Gestionamos tus redes y campañas digitales para aumentar tu visibilidad y resultados. También ofrecemos mentorías personalizadas para que aprendas a gestionar tus redes.</p>
                 </div>
             </a>
         </div>
@@ -633,18 +666,18 @@
     <section class="parallax-section">
         <div class="parallax-bg"></div>
         <div class="parallax-content fade-in">
-            <h2>Donde la creatividad se une a la estrategia</h2>
-            <p>Diseñamos contenido con intención, a medida para cada empresa.</p>
+            <h2 data-i18n="parallax_title">Donde la creatividad se une a la estrategia</h2>
+            <p data-i18n="parallax_desc">Diseñamos contenido con intención, a medida para cada empresa.</p>
         </div>
     </section>
 
     <section class="about-section fade-in" id="nosotros">
         <div class="about-container">
             <div class="about-text">
-                <h2>Mar Fàbregas</h2>
-                <h3 style="font-family: 'Be Vietnam', sans-serif; font-size: 1.2rem; color: var(--soft-cocoa); margin-bottom: 1.5rem; font-weight: 600;">Fundadora</h3>
-                <p>Graduada en Periodismo, siempre me ha apasionado la comunicación y contar historias. Mientras cursaba la carrera, realicé unas prácticas en una radio de economía y descubrí que mi camino no estaba allí, aunque mi interés por comunicar seguía intacto. Una pausa en Londres me permitió ver con perspectiva que el marketing y las redes sociales siempre habían formado parte de mi vida, y que trabajar en ello no lo percibía como un trabajo, sino como un hobby. El tiempo volaba cuando me dedicaba a ello.</p>
-                <p>Durante muchos años, me he formado en marketing y comunicación turística, copywriting y muchas otras disciplinas relacionadas, lo que me ha permitido tener una visión de 360° y trabajar en excepcionales empresas hoteleras de lujo en Mallorca. Ahora he decidido emprender mi propio viaje, ayudando a negocios a crecer con una identidad única que refleje su esencia y aporte valor real.</p>
+                <h2 data-i18n="about_title">Mar Fàbregas</h2>
+                <h3 style="font-family: 'Be Vietnam', sans-serif; font-size: 1.2rem; color: var(--soft-cocoa); margin-bottom: 1.5rem; font-weight: 600;" data-i18n="about_subtitle">Fundadora</h3>
+                <p data-i18n="about_p1">Graduada en Periodismo, siempre me ha apasionado la comunicación y contar historias. Mientras cursaba la carrera, realicé unas prácticas en una radio de economía y descubrí que mi camino no estaba allí, aunque mi interés por comunicar seguía intacto. Una pausa en Londres me permitió ver con perspectiva que el marketing y las redes sociales siempre habían formado parte de mi vida, y que trabajar en ello no lo percibía como un trabajo, sino como un hobby. El tiempo volaba cuando me dedicaba a ello.</p>
+                <p data-i18n="about_p2">Durante muchos años, me he formado en marketing y comunicación turística, copywriting y muchas otras disciplinas relacionadas, lo que me ha permitido tener una visión de 360° y trabajar en excepcionales empresas hoteleras de lujo en Mallorca. Ahora he decidido emprender mi propio viaje, ayudando a negocios a crecer con una identidad única que refleje su esencia y aporte valor real.</p>
             </div>
             <div class="about-image">
                 <img src="assets/image00001.jpeg" alt="Mar Fàbregas - Fundadora de Maar Studio Creativo">
@@ -654,10 +687,10 @@
 
     <section class="cta-section fade-in" id="contacto">
         <div class="cta-content">
-            <h2>¿Quieres saber más? ¡Contáctanos!</h2>
+            <h2 data-i18n="cta_title">¿Quieres saber más? ¡Contáctanos!</h2>
             <div class="cta-buttons">
-                <a href="https://wa.me/34608463878?text=Hola%20Maar%20Studio%20Creativo,%20me%20gustaría%20obtener%20más%20información" class="cta-button">WhatsApp</a>
-                <a href="mailto:info@maarstudiocreativo.com" class="cta-button secondary">Email</a>
+                <a href="https://wa.me/34608463878?text=Hola%20Maar%20Studio%20Creativo,%20me%20gustaría%20obtener%20más%20información" class="cta-button" data-i18n="cta_whatsapp">WhatsApp</a>
+                <a href="mailto:info@maarstudiocreativo.com" class="cta-button secondary" data-i18n="cta_email">Email</a>
             </div>
         </div>
     </section>
@@ -666,19 +699,19 @@
         <div class="footer-content">
             <div class="footer-about">
                 <h3>Maar Studio Creativo</h3>
-                <p>Transformamos marcas a través del diseño, la estrategia y la creatividad. Tu visión, nuestra pasión.</p>
+                <p data-i18n="footer_about_desc">Transformamos marcas a través del diseño, la estrategia y la creatividad. Tu visión, nuestra pasión.</p>
             </div>
             <div class="footer-links">
-                <h4>Enlaces</h4>
+                <h4 data-i18n="footer_links_title">Enlaces</h4>
                 <ul>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
-                    <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                    <li><a href="#servicios" data-i18n="nav_servicios">Servicios</a></li>
+                    <li><a href="#nosotros" data-i18n="nav_nosotros">Nosotros</a></li>
+                    <li><a href="politica-privacidad.html" data-i18n="footer_privacy">Política de Privacidad</a></li>
+                    <li><a href="politica-cookies.html" data-i18n="footer_cookies">Política de Cookies</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <h4>Contacto</h4>
+                <h4 data-i18n="footer_contact_title">Contacto</h4>
                 <div class="contact-icons">
                     <a href="https://wa.me/34608463878" target="_blank" aria-label="WhatsApp">
                         <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
@@ -699,7 +732,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Maar Studio Creativo. Todos los derechos reservados. | <a href="politica-privacidad.html">Política de Privacidad</a> | <a href="politica-cookies.html">Política de Cookies</a></p>
+            <p>&copy; 2024 Maar Studio Creativo. <span data-i18n="footer_copyright">Todos los derechos reservados.</span> | <a href="politica-privacidad.html" data-i18n="footer_privacy">Política de Privacidad</a> | <a href="politica-cookies.html" data-i18n="footer_cookies">Política de Cookies</a></p>
         </div>
     </footer>
 
@@ -709,6 +742,7 @@
         </svg>
     </a>
 
+    <script src="translations.js"></script>
     <script>
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('nav-links');
