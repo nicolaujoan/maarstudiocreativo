@@ -439,6 +439,41 @@
             color: var(--off-white);
         }
 
+        .clients-section {
+            background: var(--light-blue);
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .clients-section h2 {
+            font-family: 'Noto Serif Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 400;
+            color: var(--off-white);
+            margin-bottom: 3rem;
+        }
+
+        .clients-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .clients-logos img {
+            height: 300px;
+            width: auto;
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+
+        .clients-logos img:hover {
+            transform: scale(1.1);
+        }
+
         footer {
             background: var(--soft-charcoal);
             color: var(--off-white);
@@ -796,6 +831,15 @@
             <div class="about-image">
                 <img src="assets/image00001.jpeg" alt="Mar Fàbregas - Fundadora de Maar Studio Creativo">
             </div>
+        </div>
+    </section>
+
+    <section class="clients-section fade-in">
+        <h2 data-i18n="clients_title">Ya han confiado en nosotros</h2>
+        <div class="clients-logos">
+            <img src="assets/logo1.png" alt="Cliente 1">
+            <img src="assets/logo2.png" alt="Cliente 2">
+            <img src="assets/logo3.png" alt="Cliente 3">
         </div>
     </section>
 

@@ -32,6 +32,9 @@ const translations = {
         about_p1: "Graduada en Periodismo, siempre me ha apasionado la comunicación y contar historias. Mientras cursaba la  carrera,  realicé  prácticas  radiofónicas,  donde  descubrí  que  mi  camino  no  estaba  allí,  aunque  mi  interés por comunicar seguía latente. Una pausa en Londres me permitió comprender el poder del marketing y las redes sociales para cualquier negocio. Allí entendí que trabajar en este ámbito no era solo un trabajo, sino una verdadera vocación. El tiempo volaba cuando me dedicaba a ello.",
         about_p2: "Durante  diez  años  me  he  formado  en  marketing  y  comunicación  turística,  copywriting  y  otras  disciplinas relacionadas,  lo  que  me  ha  permitido  desarrollar  una  visión  de  360°  y  colaborar  con  grandes  empresas hoteleras  de  lujo  en  Mallorca,  reconocidas  a  nivel  internacional.  Ahora  he  decidido  emprender  mi  propio viaje, ayudando a negocios a crecer con una identidad que refleje su esencia y genere valor.",
 
+        // Clients Section
+        clients_title: "Ya han confiado en nosotros",
+
         // CTA Section
         cta_title: "¿Quieres saber más?<br><strong>¡Contáctanos!</strong>",
         cta_whatsapp: "WhatsApp",
@@ -183,6 +186,9 @@ const translations = {
         about_subtitle: "Founder & Creative Director",
         about_p1: "Graduated  in  Journalism,  my  true  passion  has  always  been  storytelling and  communication.  Early  experiences  in  radio  internships  revealed  that my path lay elsewhere, yet my desire to connect and communicate never faded.  A transformative pause in London showed me the power of marketing and social media for any business, and that working in this field did  not  feel  like  a  job,  but  a  calling. Time  simply  disappeared  when  I  was fully immersed in it.",
         about_p2: "For the past ten years, I have honed my expertise in marketing, luxury tourism communication, copywriting, and related disciplines, gaining a comprehensive perspective and collaborating with prestigious luxury hotel brands  in  Mallorca. Today,  I  channel  all  this  experience  into  helping  businesses  grow  by  crafting  distinctive identities that reflect their essence, captivate their audience, and create lasting value.",
+
+        // Clients Section
+        clients_title: "They already trust us",
 
         // CTA Section
         cta_title: "Would you like to know more?<br><strong>Reach out now.</strong>",
