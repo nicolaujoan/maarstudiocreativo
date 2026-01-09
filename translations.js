@@ -7,7 +7,7 @@ const translations = {
         nav_contacto: "Contacto",
 
         // Hero Section
-        hero_title: "Contamos la historia de tu negocio para que te recuerden",
+        hero_title: "Contamos la historia de tu negocio para que te recuerden.",
         hero_subtitle: "Nada de publicar por publicar.",
         hero_description: "Analizamos tu marca, encontramos tu lugar y estudiamos qué necesita y qué quiere tu público objetivo. A partir de ahí, creamos estrategias de contenido pensadas para conectar de verdad con las personas adecuadas.",
 
