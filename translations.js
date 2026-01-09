@@ -191,7 +191,7 @@ const translations = {
         clients_title: "They have already trusted us",
 
         // CTA Section
-        cta_title: "Would you like to know more?<br><strong>Reach out now.</strong>",
+        cta_title: "Want to know more?<br><strong>Reach out now.</strong>",
         cta_whatsapp: "WhatsApp",
         cta_email: "Email",
 
