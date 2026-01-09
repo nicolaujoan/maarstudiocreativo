@@ -188,7 +188,7 @@ const translations = {
         about_p2: "For the past ten years, I have honed my expertise in marketing, luxury tourism communication, copywriting, and related disciplines, gaining a comprehensive perspective and collaborating with prestigious luxury hotel brands  in  Mallorca. Today,  I  channel  all  this  experience  into  helping  businesses  grow  by  crafting  distinctive identities that reflect their essence, captivate their audience, and create lasting value.",
 
         // Clients Section
-        clients_title: "They already trust us",
+        clients_title: "They have already trusted us",
 
         // CTA Section
         cta_title: "Would you like to know more?<br><strong>Reach out now.</strong>",
