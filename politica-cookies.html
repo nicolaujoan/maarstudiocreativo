@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Cookies | Maar Studio Creativo</title>
+    <link rel="shortcut icon" href="assets/4.png" type="image/png">
+    <link rel="icon" href="assets/4.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/4.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;500;600;700;800&family=Be+Vietnam:wght@300;400;500;600;700&family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
@@ -19,9 +22,11 @@
             --beige-sandy: #D6C7B4;
             --light-cream: #F1E9DD;
             --soft-cocoa: #6C5643;
-            --warm-gray: #C4C0BC;
+            --red-infierno: #4B0100;
             --soft-charcoal: #2E2E2E;
             --off-white: #FAF8F5;
+            --mystic-navy: #13273D;
+            --light-blue: #74889F;
         }
 
         html {
@@ -41,7 +46,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: var(--soft-cocoa);
+            background: var(--mystic-navy);
             z-index: 1000;
             padding: 1rem 5%;
             transition: all 0.3s ease;
@@ -73,8 +78,8 @@
         }
 
         .logo img {
-            height: 80px;
-            width: 80px;
+            height: 120px;
+            width: 120px;
             object-fit: contain;
             position: relative;
             transform: scale(2.5);
@@ -129,30 +134,30 @@
 
         .lang-btn {
             background: transparent;
-            border: 2px solid var(--off-white);
+            border: none;
             color: var(--off-white);
-            padding: 0.4rem 0.8rem;
-            border-radius: 5px;
+            padding: 0.3rem 0.5rem;
+            border-radius: 3px;
             cursor: pointer;
-            font-weight: 500;
-            font-size: 0.9rem;
+            font-weight: 400;
+            font-size: 0.85rem;
             transition: all 0.3s ease;
+            opacity: 0.6;
         }
 
         .lang-btn:hover {
-            background: var(--beige-sandy);
-            border-color: var(--beige-sandy);
-            color: var(--soft-charcoal);
+            opacity: 1;
+            color: var(--beige-sandy);
         }
 
         .lang-btn.active {
-            background: var(--off-white);
-            color: var(--soft-cocoa);
+            opacity: 1;
+            font-weight: 500;
         }
 
         /* Hero Section */
         .hero {
-            margin-top: 70px;
+            margin-top: 120px;
             padding: 4rem 5%;
             background: var(--light-cream);
             text-align: center;
@@ -261,7 +266,7 @@
         .cookie-table td {
             padding: 0.8rem;
             text-align: left;
-            border: 1px solid var(--warm-gray);
+            border: 1px solid var(--light-blue);
         }
 
         .cookie-table th {
@@ -320,21 +325,13 @@
             font-family: 'Noto Serif Display', serif;
             font-size: 1.8rem;
             margin-bottom: 1rem;
-            color: var(--beige-sandy);
+            color: var(--off-white);
         }
 
         .footer-about p {
-            color: var(--warm-gray);
+            color: var(--off-white);
             line-height: 1.7;
             font-size: 0.95rem;
-        }
-
-        .footer-links h4 {
-            font-family: 'Be Vietnam', sans-serif;
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            color: var(--beige-sandy);
-            font-weight: 600;
         }
 
         .footer-links ul {
@@ -346,21 +343,21 @@
         }
 
         .footer-links ul li a {
-            color: var(--warm-gray);
+            color: var(--off-white);
             text-decoration: none;
             transition: color 0.3s ease;
             font-size: 0.95rem;
         }
 
         .footer-links ul li a:hover {
-            color: var(--beige-sandy);
+            color: var(--off-white);
         }
 
         .footer-contact h4 {
             font-family: 'Be Vietnam', sans-serif;
             font-size: 1.1rem;
             margin-bottom: 1rem;
-            color: var(--beige-sandy);
+            color: var(--off-white);
             font-weight: 600;
         }
 
@@ -389,16 +386,35 @@
             transform: translateY(-3px);
         }
 
+        .instagram-icon-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(214, 199, 180, 0.1);
+            color: var(--off-white);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .instagram-icon-link:hover {
+            background: var(--beige-sandy);
+            color: var(--soft-charcoal);
+            transform: translateY(-3px);
+        }
+
         .footer-bottom {
             text-align: center;
             padding-top: 2rem;
             border-top: 1px solid rgba(214, 199, 180, 0.2);
-            color: var(--warm-gray);
+            color: var(--off-white);
             font-size: 0.9rem;
         }
 
         .footer-bottom a {
-            color: var(--beige-sandy);
+            color: var(--off-white);
             text-decoration: none;
         }
 
@@ -550,8 +566,7 @@
     <nav id="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="assets/6.png" alt="Maar Studio Creativo Logo">
-                <span>Maar Studio Creativo</span>
+                <img src="assets/4.png" alt="Maar Studio Creativo Logo">
             </a>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -688,11 +703,17 @@
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <h3>Maar Studio Creativo</h3>
+                <img src="assets/5.png" alt="Maar Studio Creativo Logo" style="width: 300px; height: auto; max-width: 100%; object-fit: contain; margin-bottom: 1.5rem; display: block; margin-bottom: -100px; margin-top: -100px; margin-left: -100px;">
                 <p data-i18n="footer_about_desc">Transformamos marcas a través del diseño, la estrategia y la creatividad. Tu visión, nuestra pasión.</p>
+                <div style="margin-top: 1.5rem;">
+                    <a href="https://www.instagram.com/maarstudio__/" target="_blank" aria-label="Instagram" class="instagram-icon-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
             <div class="footer-links">
-                <h4 data-i18n="footer_links_title">Enlaces</h4>
                 <ul>
                     <li><a href="index.html#servicios" data-i18n="nav_servicios">Servicios</a></li>
                     <li><a href="index.html#nosotros" data-i18n="nav_nosotros">Nosotros</a></li>

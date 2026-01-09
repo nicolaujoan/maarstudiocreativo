@@ -7,13 +7,14 @@ const translations = {
         nav_contacto: "Contacto",
 
         // Hero Section
-        hero_title: "Contamos la historia de tu negocio para que te recuerden.",
-        hero_description: "Nada de publicar por publicar. Analizamos tu marca, encontramos tu lugar y estudiamos qué necesita y qué quiere tu público objetivo.<br><br>A partir de ahí, creamos estrategias de contenido pensadas para conectar de verdad con las personas adecuadas.",
+        hero_title: "Contamos la historia de tu negocio para que te recuerden",
+        hero_subtitle: "Nada de publicar por publicar.",
+        hero_description: "Analizamos tu marca, encontramos tu lugar y estudiamos qué necesita y qué quiere tu público objetivo. A partir de ahí, creamos estrategias de contenido pensadas para conectar de verdad con las personas adecuadas.",
 
         // Services Section
         services_title: "Nuestros Servicios",
         service1_title: "Estrategias",
-        service1_desc: "Buscamos tu lugar en el mercado, investigamos sobre lo que necesita y quiere tu público objetivo y planteamos nuevas estrategias para conectar con ellos en base a estas inquietudes.",
+        service1_desc: "Buscamos tu lugar en el mercado, investigamos lo que necesita y quiere tu público objetivo  y  diseñamos  estrategias  de  comunicación  conscientes  y  creativas  que conecten de forma efectiva, generen valor y posicionen tu marca.",
         service2_title: "Diseño y Branding",
         service2_desc: "Diseñamos la identidad visual completa, así como la guía de valores y el tono de comunicación de tu negocio. Creamos logos, catálogos, cartas, tarjetas de visita, y todo tipo de material comercial.",
         service3_title: "Creación de contenido",
@@ -27,22 +28,25 @@ const translations = {
 
         // About Section
         about_title: "Mar Fàbregas",
-        about_subtitle: "Fundadora",
-        about_p1: "Graduada en Periodismo, siempre me ha apasionado la comunicación y contar historias. Mientras cursaba la carrera, realicé unas prácticas en una radio de economía y descubrí que mi camino no estaba allí, aunque mi interés por comunicar seguía intacto. Una pausa en Londres me permitió ver con perspectiva que el marketing y las redes sociales siempre habían formado parte de mi vida, y que trabajar en ello no lo percibía como un trabajo, sino como un hobby. El tiempo volaba cuando me dedicaba a ello.",
-        about_p2: "Durante muchos años, me he formado en marketing y comunicación turística, copywriting y muchas otras disciplinas relacionadas, lo que me ha permitido tener una visión de 360° y trabajar en excepcionales empresas hoteleras de lujo en Mallorca. Ahora he decidido emprender mi propio viaje, ayudando a negocios a crecer con una identidad única que refleje su esencia y aporte valor real.",
+        about_subtitle: "Fundadora y Directora Creativa",
+        about_p1: "Graduada en Periodismo, siempre me ha apasionado la comunicación y contar historias. Mientras cursaba la  carrera,  realicé  prácticas  radiofónicas,  donde  descubrí  que  mi  camino  no  estaba  allí,  aunque  mi  interés por comunicar seguía latente. Una pausa en Londres me permitió comprender el poder del marketing y las redes sociales para cualquier negocio. Allí entendí que trabajar en este ámbito no era solo un trabajo, sino una verdadera vocación. El tiempo volaba cuando me dedicaba a ello.",
+        about_p2: "Durante  diez  años  me  he  formado  en  marketing  y  comunicación  turística,  copywriting  y  otras  disciplinas relacionadas,  lo  que  me  ha  permitido  desarrollar  una  visión  de  360°  y  colaborar  con  grandes  empresas hoteleras  de  lujo  en  Mallorca,  reconocidas  a  nivel  internacional.  Ahora  he  decidido  emprender  mi  propio viaje, ayudando a negocios a crecer con una identidad que refleje su esencia y genere valor.",
 
         // CTA Section
-        cta_title: "¿Quieres saber más? ¡Contáctanos!",
+        cta_title: "¿Quieres saber más?<br><strong>¡Contáctanos!</strong>",
         cta_whatsapp: "WhatsApp",
         cta_email: "Email",
 
         // Footer
-        footer_about_desc: "Transformamos marcas a través del diseño, la estrategia y la creatividad. Tu visión, nuestra pasión.",
+        footer_about_desc: "Comunicamos de forma consciente y creativa para ayudarte a construir una comunidad sólida, generar valor y posicionar tu marca.",
         footer_links_title: "Enlaces",
         footer_contact_title: "Contacto",
         footer_copyright: "Todos los derechos reservados.",
         footer_privacy: "Política de Privacidad",
         footer_cookies: "Política de Cookies",
+
+        // Come back message
+        come_back: "¡Vuelve!",
 
         // Privacy Policy
         privacy_title: "Política de Privacidad",
@@ -155,42 +159,46 @@ const translations = {
         nav_contacto: "Contact",
 
         // Hero Section
-        hero_title: "We tell your business story so you'll be remembered.",
-        hero_description: "No posting for the sake of posting. We analyze your brand, find your place, and study what your target audience needs and wants.<br><br>From there, we create content strategies designed to truly connect with the right people.",
+        hero_title: "We elevate your brand’s story into a refined narrative of distinction that captivates and endures.",
+        hero_subtitle: "Nothing is published without purpose.",
+        hero_description: "We analyze your brand, define its place in the market, and understand  what  your  target  audience  truly  needs  and  desires. From there, we craft refined content strategies designed to connect meaningfully with the right audience.",
 
         // Services Section
-        services_title: "Our Services",
+        services_title: "Curated Services",
         service1_title: "Strategies",
-        service1_desc: "We find your place in the market, research what your target audience needs and wants, and develop new strategies to connect with them based on these insights.",
-        service2_title: "Design & Branding",
-        service2_desc: "We design complete visual identity, as well as value guidelines and communication tone for your business. We create logos, catalogs, menus, business cards, and all types of commercial materials.",
+        service1_desc: "We identify your place in the market, analyze the needs and desires of your target audience, then craft conscious, creative communication strategies designed to connect effectively, generate value, and elevate your business.",
+        service2_title: "Design and Branding",
+        service2_desc: "We craft your complete visual identity, including your brand’s values and communication tone. From logos and catalogs to menus, business cards, and all commercial materials, every detail is designed to reflect your brand’s essence and distinction.",
         service3_title: "Content Creation",
-        service3_desc: "We create all types of content focused on social media, personal branding, and family photos. Tell us what you want to showcase and we'll offer you the best audiovisual options, taking care of every detail to transform your ideas into reality.",
+        service3_desc: "We create bespoke content for social media, personal branding, and lifestyle imagery. Share your vision, and we will transform it into stunning audiovisual experiences, meticulously crafted to bring your ideas to life with sophistication and impact.",
         service4_title: "Social Media Management",
-        service4_desc: "We help you grow on social media strategically. We manage your networks and digital campaigns to increase your visibility and results. We also offer personalized mentoring so you can learn to manage your own networks.",
+        service4_desc: "We help you grow on social media with strategy and impact. From managing your accounts to running digital campaigns, we boost your visibility and deliver results. We also offer personalized mentorships, empowering you to master your social media with confidence.",
 
         // Parallax Section
-        parallax_title: "Where creativity meets strategy",
+        parallax_title: "We create purposeful content, bespoke for every brand. ",
         parallax_desc: "We design content with intention, tailored for each company.",
 
         // About Section
         about_title: "Mar Fàbregas",
-        about_subtitle: "Founder",
-        about_p1: "A Journalism graduate, I've always been passionate about communication and storytelling. During my studies, I did an internship at an economics radio station and discovered that wasn't my path, although my interest in communication remained intact. A break in London allowed me to see with perspective that marketing and social media had always been part of my life, and that working on it didn't feel like work, but like a hobby. Time flew when I dedicated myself to it.",
-        about_p2: "For many years, I've trained in marketing and tourism communication, copywriting and many other related disciplines, which has given me a 360° vision and allowed me to work in exceptional luxury hotel companies in Mallorca. Now I've decided to embark on my own journey, helping businesses grow with a unique identity that reflects their essence and provides real value.",
+        about_subtitle: "Founder & Creative Director",
+        about_p1: "Graduated  in  Journalism,  my  true  passion  has  always  been  storytelling and  communication.  Early  experiences  in  radio  internships  revealed  that my path lay elsewhere, yet my desire to connect and communicate never faded.  A transformative pause in London showed me the power of marketing and social media for any business, and that working in this field did  not  feel  like  a  job,  but  a  calling. Time  simply  disappeared  when  I  was fully immersed in it.",
+        about_p2: "For the past ten years, I have honed my expertise in marketing, luxury tourism communication, copywriting, and related disciplines, gaining a comprehensive perspective and collaborating with prestigious luxury hotel brands  in  Mallorca. Today,  I  channel  all  this  experience  into  helping  businesses  grow  by  crafting  distinctive identities that reflect their essence, captivate their audience, and create lasting value.",
 
         // CTA Section
-        cta_title: "Want to know more? Contact us!",
+        cta_title: "Would you like to know more?<br><strong>Reach out now.</strong>",
         cta_whatsapp: "WhatsApp",
         cta_email: "Email",
 
         // Footer
-        footer_about_desc: "We transform brands through design, strategy and creativity. Your vision, our passion.",
+        footer_about_desc: "We craft purposeful and creative communication to build a strong community, generate value, and elevate your brand.",
         footer_links_title: "Links",
         footer_contact_title: "Contact",
         footer_copyright: "All rights reserved.",
         footer_privacy: "Privacy Policy",
         footer_cookies: "Cookie Policy",
+
+        // Come back message
+        come_back: "Come back!",
 
         // Privacy Policy
         privacy_title: "Privacy Policy",
