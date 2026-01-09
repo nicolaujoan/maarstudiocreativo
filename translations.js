@@ -162,7 +162,7 @@ const translations = {
         nav_contacto: "Contact",
 
         // Hero Section
-        hero_title: "We elevate your brand’s story into a refined narrative of distinction that captivates and endures.",
+        hero_title: "We craft refined brand narratives that captivate and endure.",
         hero_subtitle: "Nothing is published without purpose.",
         hero_description: "We analyze your brand, define its place in the market, and understand  what  your  target  audience  truly  needs  and  desires. From there, we craft refined content strategies designed to connect meaningfully with the right audience.",
 
