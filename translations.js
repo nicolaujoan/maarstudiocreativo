@@ -178,8 +178,8 @@ const translations = {
         service4_desc: "We craft purposeful and creative communication to build a strong community, generate value, and elevate your brand.",
 
         // Parallax Section
-        parallax_title: "We create purposeful content, bespoke for every brand. ",
-        parallax_desc: "We design content with intention, tailored for each company.",
+        parallax_title: "Where Creativity Meets Strategy",
+        parallax_desc: "We create purposeful content, bespoke for every brand.",
 
         // About Section
         about_title: "Mar Fàbregas",

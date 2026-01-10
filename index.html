@@ -458,7 +458,7 @@
             justify-content: center;
             align-items: center;
             gap: 4rem;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -466,9 +466,12 @@
         .clients-logos img {
             height: 200px;
             width: auto;
+            min-width: 150px;
+            max-width: calc(25% - 3rem);
             object-fit: contain;
             transition: all 0.3s ease;
             flex-shrink: 1;
+            flex-grow: 0;
         }
 
         .clients-logos img:hover {
@@ -859,6 +862,7 @@
             <img src="assets/logo1.png" alt="Cliente 1">
             <img src="assets/logo2.png" alt="Cliente 2">
             <img src="assets/logo3.png" alt="Cliente 3">
+            <img src="assets/logo4.png" alt="Cliente 4">
         </div>
     </section>
 
