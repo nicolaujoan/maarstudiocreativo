@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maar Studio Creativo - Transformamos tu marca</title>
     <link rel="shortcut icon" href="assets/4.png" type="image/png">
-    <link rel="icon" href="assets/4.png" type="image/png">
-    <link rel="apple-touch-icon" href="assets/4.png">
+    <link rel="icon" href="assets/1.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/1.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;500;600;700;800&family=Be+Vietnam:wght@300;400;500;600;700&family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
@@ -166,9 +166,10 @@
         }
 
         .hero-title-content {
-            max-width: 900px;
+            max-width: 100%;
             text-align: center;
             z-index: 2;
+            padding: 0 2rem;
         }
 
         .hero-title-section h1 {
@@ -220,7 +221,7 @@
 
         .hero-description-section h2 {
             font-family: 'Be Vietnam', sans-serif;
-            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-size: clamp(2.2rem, 5vw, 2.5rem);
             font-weight: 700;
             color: var(--off-white);
             margin-bottom: 1.5rem;
@@ -457,16 +458,17 @@
             justify-content: center;
             align-items: center;
             gap: 4rem;
-            flex-wrap: wrap;
-            max-width: 1000px;
+            flex-wrap: nowrap;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
         .clients-logos img {
-            height: 300px;
+            height: 200px;
             width: auto;
             object-fit: contain;
             transition: all 0.3s ease;
+            flex-shrink: 1;
         }
 
         .clients-logos img:hover {
@@ -686,14 +688,24 @@
             }
             .nav-links.active { right: 0; }
             .hamburger { display: flex; }
+            .nav-container {
+                justify-content: center;
+                position: relative;
+            }
+            .hamburger {
+                position: absolute;
+                right: 5%;
+            }
             .logo {
-                margin-left: 1.5rem;
+                margin-left: 0;
                 gap: 0.5rem;
+                justify-content: center;
             }
             .logo img {
                 height: 70px;
                 width: 70px;
                 transform: scale(3.5);
+                transform-origin: center center;
             }
             .logo span {
                 font-size: 1rem;
@@ -718,10 +730,12 @@
                 background-size: cover;
             }
             .clients-logos {
-                gap: .5rem;
+                gap: 0.5rem;
+                padding: 0 1rem;
             }
             .clients-logos img {
-                height: 120px;
+                height: 150px;
+                max-width: 30%;
             }
         }
 

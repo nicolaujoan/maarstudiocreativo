@@ -20,10 +20,10 @@ const translations = {
         service3_title: "Creación de contenido",
         service3_desc: "Creamos todo tipo de contenido enfocado en redes sociales, marca personal y fotos de familia. Dinos qué quieres mostrar y te ofrecemos las mejores opciones audiovisuales, cuidando cada detalle para que tus ideas se transformen en realidad.",
         service4_title: "Gestión de redes sociales",
-        service4_desc: "Te ayudamos a crecer en redes sociales de forma estratégica. Gestionamos tus redes y campañas digitales para aumentar tu visibilidad y resultados. También ofrecemos mentorías personalizadas para que aprendas a gestionar tus redes.",
+        service4_desc: "Comunicamos de forma consciente y creativa para ayudarte a construir una comunidad sólida, generar valor y posicionar tu marca.",
 
         // Parallax Section
-        parallax_title: "Donde la creatividad se une a la estrategia",
+        parallax_title: "Donde la creatividad se une a la estrategia.",
         parallax_desc: "Diseñamos contenido con intención, a medida para cada empresa.",
 
         // About Section
@@ -175,7 +175,7 @@ const translations = {
         service3_title: "Content Creation",
         service3_desc: "We create bespoke content for social media, personal branding, and lifestyle imagery. Share your vision, and we will transform it into stunning audiovisual experiences, meticulously crafted to bring your ideas to life with sophistication and impact.",
         service4_title: "Social Media Management",
-        service4_desc: "We help you grow on social media with strategy and impact. From managing your accounts to running digital campaigns, we boost your visibility and deliver results. We also offer personalized mentorships, empowering you to master your social media with confidence.",
+        service4_desc: "We craft purposeful and creative communication to build a strong community, generate value, and elevate your brand.",
 
         // Parallax Section
         parallax_title: "We create purposeful content, bespoke for every brand. ",
