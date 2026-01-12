@@ -68,11 +68,12 @@
             display: flex;
             align-items: center;
             gap: 1rem;
-            margin-left: -6rem;
+            margin-left: -4rem;
             position: relative;
             min-height: 80px;
             opacity: 0;
             animation: fadeInLogo 0.2s ease-in forwards;
+            padding-left: 1rem;
         }
 
         .logo img {
@@ -81,7 +82,7 @@
             object-fit: contain;
             position: relative;
             transform: scale(2.5);
-            transform-origin: center left;
+            transform-origin: left center;
             flex-shrink: 0;
         }
 
@@ -166,7 +167,7 @@
         }
 
         .hero-title-content {
-            width: 100%;
+            max-width: 900px;
             text-align: center;
             z-index: 2;
             padding: 0;
@@ -481,6 +482,10 @@
 
         .clients-logos img:hover {
             transform: scale(1.1);
+        }
+
+        .clients-logos .logo-small {
+            height: 180px;
         }
 
         footer {
@@ -869,9 +874,8 @@
             <img src="assets/logo1.png" alt="Cliente 1">
             <img src="assets/logo2.png" alt="Cliente 2">
             <img src="assets/logo3.png" alt="Cliente 3">
-            <img src="assets/logo4.png" alt="Cliente 4">
             <img src="assets/logo5.png" alt="Cliente 5">
-            <img src="assets/logo6.png" alt="Cliente 6">
+            <img src="assets/logo6.png" alt="Cliente 6" class="logo-small">
             <img src="assets/logo7.png" alt="Cliente 7">
             <img src="assets/logo8.png" alt="Cliente 8">
         </div>
