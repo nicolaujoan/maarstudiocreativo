@@ -30,7 +30,7 @@ const translations = {
         about_title: "Mar Fàbregas",
         about_subtitle: "Fundadora y Directora Creativa",
         about_p1: "Graduada en Periodismo, siempre me ha apasionado la comunicación y contar historias. Mientras cursaba la  carrera,  realicé  prácticas  radiofónicas,  donde  descubrí  que  mi  camino  no  estaba  allí,  aunque  mi  interés por comunicar seguía latente. Una pausa en Londres me permitió comprender el poder del marketing y las redes sociales para cualquier negocio. Allí entendí que trabajar en este ámbito no era solo un trabajo, sino una verdadera vocación. El tiempo volaba cuando me dedicaba a ello.",
-        about_p2: "Durante  diez  años  me  he  formado  en  marketing  y  comunicación  turística,  copywriting  y  otras  disciplinas relacionadas,  lo  que  me  ha  permitido  desarrollar  una  visión  de  360°  y  colaborar  con  grandes  empresas hoteleras  de  lujo  en  Mallorca,  reconocidas  a  nivel  internacional.  Ahora  he  decidido  emprender  mi  propio viaje, ayudando a negocios a crecer con una identidad que refleje su esencia y genere valor.",
+        about_p2: "Durante  diez  años  me  he  formado  en  marketing  y  comunicación  turística,  copywriting  y  otras  disciplinas relacionadas,  lo  que  me  ha  permitido  desarrollar  una  visión  de  360°  y  trabajar  con  grandes  empresas hoteleras  de  lujo  en  Mallorca,  reconocidas  a  nivel  internacional.  Ahora  he  decidido  emprender  mi  propio viaje, ayudando a negocios a crecer con una identidad que refleje su esencia y genere valor.",
 
         // Clients Section
         clients_title: "Ya han confiado en nosotros",
