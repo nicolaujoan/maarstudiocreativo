@@ -8,8 +8,8 @@ const translations = {
 
         // Hero Section
         hero_title: "Contamos la historia de tu negocio para que te recuerden.",
-        hero_subtitle: "Nada de publicar por publicar.",
-        hero_description: "Analizamos tu marca, encontramos tu lugar y estudiamos qué necesita y qué quiere tu público objetivo. A partir de ahí, creamos estrategias de contenido pensadas para conectar de verdad con las personas adecuadas.",
+        hero_subtitle: "Contamos la historia de tu negocio para que te recuerden.",
+        hero_description: "Nada de publicar por publicar. Analizamos tu negocio y tu público para crear estrategias de contenido que conecten.",
 
         // Services Section
         services_title: "Nuestros Servicios",
@@ -162,9 +162,9 @@ const translations = {
         nav_contacto: "Contact",
 
         // Hero Section
-        hero_title: "We craft refined brand narratives that captivate and endure.",
-        hero_subtitle: "Nothing is published without purpose.",
-        hero_description: "We analyze your brand, define its place in the market, and understand  what  your  target  audience  truly  needs  and  desires. From there, we craft refined content strategies designed to connect meaningfully with the right audience.",
+        hero_title: "We craft your brand's story to captivate and endure.",
+        hero_subtitle: "We craft your brand's story to captivate and endure.",
+        hero_description: "Nothing is published without purpose. We take the time to understand your business and your audience, creating refined content strategies that build meaningful connections.",
 
         // Services Section
         services_title: "Curated Services",
