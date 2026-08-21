@@ -236,10 +236,16 @@
             transition: all 0.3s ease;
         }
 
-        .hero-cta:hover {
+        @media (hover: hover) and (pointer: fine) {
+            .hero-cta:hover {
+                background: var(--soft-cocoa);
+                transform: translateY(-3px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .hero-cta:active {
             background: var(--soft-cocoa);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
 
         .services-section {
