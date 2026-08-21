@@ -218,6 +218,26 @@
             text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
         }
 
+        .hero-cta {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 3rem;
+            background: var(--beige-sandy);
+            color: var(--off-white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hero-cta:hover {
+            background: var(--soft-cocoa);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
         .services-section {
             padding: 6rem 5%;
             background: var(--red-infierno);
@@ -420,48 +440,140 @@
             color: var(--off-white);
         }
 
-        .clients-section {
-            background: #a3b5c9;
-            padding: 0;
-            text-align: center;
+        .projects-section {
+            background: var(--light-cream);
+            padding: 6rem 0;
         }
 
-        .clients-section h2 {
-            font-family: 'Noto Serif Display', serif;
-            font-size: clamp(2rem, 4vw, 2.3rem);
-            font-weight: 400;
-            color: var(--off-white);
-            margin: 0;
-            padding: 2rem 5% 1.5rem 5%;
-        }
-
-        .clients-logos {
+        .projects-list {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            max-width: 1400px;
+            flex-direction: column;
+        }
+
+        .project-category-block {
+            padding-top: 5rem;
+        }
+
+        .project-category-block:first-child {
+            padding-top: 0;
+        }
+
+        .project-category-header {
+            width: 100%;
+            margin: 0 0 3.5rem 0;
+        }
+
+        .project-category-header hr {
+            width: 100%;
+            border: none;
+            border-top: 1px solid rgba(46, 46, 46, 0.25);
+            margin: 0;
+        }
+
+        .project-category {
+            display: block;
+            text-align: center;
+            font-family: 'Noto Serif Display', serif;
+            font-size: clamp(2rem, 4.5vw, 3.2rem);
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--soft-charcoal);
+            padding: 1.5rem 5%;
+        }
+
+        .project-entry {
+            max-width: 1800px;
             margin: 0 auto;
-            padding: 0 5% 2rem 5%;
+            padding: 0 2rem 6rem 2rem;
         }
 
-        .clients-logos img {
-            height: 250px;
-            width: auto;
-            flex: 0 0 calc(25% - 1.5rem);
-            max-width: calc(25% - 1.5rem);
-            min-width: calc(25% - 1.5rem);
-            object-fit: contain;
-            transition: all 0.3s ease;
+        .project-entry + .project-entry {
+            border-top: 1px solid rgba(46, 46, 46, 0.1);
+            padding-top: 6rem;
         }
 
-        .clients-logos img:hover {
-            transform: scale(1.1);
+        .project-row {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-left: -2rem;
         }
 
-        .clients-logos .logo-small {
-            height: 180px;
+        .project-row + .project-row {
+            margin-top: 2rem;
+        }
+
+        .project-row > div {
+            width: calc(33.3333% - 2rem);
+            margin-left: 2rem;
+        }
+
+        .project-row > div > * + * {
+            margin-top: 2rem;
+        }
+
+        .project-heading h3 {
+            font-family: 'Be Vietnam', sans-serif;
+            font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--soft-charcoal);
+            margin-bottom: 0.8rem;
+        }
+
+        .project-tagline {
+            font-style: italic;
+            font-family: 'Noto Serif Display', serif;
+            color: var(--soft-cocoa);
+            font-size: clamp(1rem, 1.3vw, 1.15rem);
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .project-row img {
+            width: 100%;
+            max-height: 650px;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .project-row img:hover {
+            transform: scale(1.02);
+        }
+
+        .project-row hr {
+            border: none;
+            border-top: 1px solid rgba(46, 46, 46, 0.2);
+            width: 100%;
+        }
+
+        .project-desc-block p {
+            color: var(--soft-charcoal);
+            line-height: 1.9;
+            font-size: 0.95rem;
+        }
+
+        .project-desc-block p strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 968px) {
+            .project-row {
+                margin-left: 0;
+            }
+            .project-row > div {
+                width: 100%;
+                margin-left: 0;
+            }
+            .project-row > div + div {
+                margin-top: 2rem;
+            }
+            .project-row > div:empty {
+                display: none;
+            }
         }
 
         footer {
@@ -760,6 +872,7 @@
             <ul class="nav-links" id="nav-links">
                 <li><a href="#inicio" data-i18n="nav_inicio">Inicio</a></li>
                 <li><a href="#servicios" data-i18n="nav_servicios">Servicios</a></li>
+                <li><a href="#proyectos" data-i18n="nav_proyectos">Proyectos</a></li>
                 <li><a href="#nosotros" data-i18n="nav_nosotros">Nosotros</a></li>
                 <li><a href="#contacto" data-i18n="nav_contacto">Contacto</a></li>
                 <li class="language-switcher">
@@ -775,6 +888,7 @@
         <div class="hero-description-content">
             <h1 data-i18n="hero_subtitle">Contamos la historia de tu negocio para que te recuerden.</h1>
             <p data-i18n="hero_description">Nada de publicar por publicar. Analizamos tu negocio y tu público para crear estrategias de contenido que conecten.</p>
+            <a href="#proyectos" class="hero-cta" data-i18n="hero_cta">Proyectos</a>
         </div>
     </section>
 
@@ -837,15 +951,240 @@
         </div>
     </section>
 
-    <section class="clients-section fade-in">
-        <h2 data-i18n="clients_title">Ya han confiado en nosotros</h2>
-        <div class="clients-logos">
-            <img src="assets/logo1.png" alt="Cliente 1">
-            <img src="assets/essencies.png" alt="Cliente 2">
-            <img src="assets/eva.png" alt="Cliente 5">
-            <img src="assets/sushi.png" alt="Cliente 6" class="logo-small">
-            <img src="assets/np_white.png" alt="Cliente 7">
-            <img src="assets/dental.png" alt="Cliente 8">
+    <section class="projects-section" id="proyectos">
+        <div class="projects-list">
+
+            <div class="project-category-block">
+                <div class="project-category-header">
+                    <hr>
+                    <span class="project-category" data-i18n="cat_restauracion">Restauración</span>
+                    <hr>
+                </div>
+
+                <div class="project-entry fade-in">
+                    <div class="project-row">
+                        <div>
+                            <div class="project-heading">
+                                <h3 data-i18n="project1_title">Mallorca Restaurant Week</h3>
+                                <p class="project-tagline" data-i18n="project1_tagline">Uno de los grandes encuentros gastronómicos de la isla, que reúne una selección de las propuestas más destacadas de Mallorca.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC03595.jpg" alt="Mallorca Restaurant Week 1">
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC05014.jpg" alt="Mallorca Restaurant Week 2">
+                        </div>
+                    </div>
+                    <div class="project-row">
+                        <div>
+                            <img src="assets/proyectos/placeholder-restauracion-3.svg" alt="Mallorca Restaurant Week 3">
+                        </div>
+                        <div></div>
+                        <div>
+                            <hr>
+                            <div class="project-desc-block">
+                                <p data-i18n="project1_desc">Para <strong>Mallorca Restaurant Week</strong> 2026 gestionamos su presencia digital, desde la estrategia en redes sociales hasta la planificación y gestión de campañas en Meta Ads. Una comunicación diseñada para amplificar el alcance de la iniciativa y conectar cada propuesta gastronómica con su público.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-entry fade-in">
+                    <div class="project-row">
+                        <div>
+                            <div class="project-heading">
+                                <h3 data-i18n="project2_title">Izakaya</h3>
+                                <p class="project-tagline" data-i18n="project2_tagline">Alta gastronomía japonesa en el corazón de Palma.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC00787.jpg" alt="Izakaya 1">
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC03618.jpg" alt="Izakaya 2">
+                        </div>
+                    </div>
+                    <div class="project-row">
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC02432.jpg" alt="Izakaya 3">
+                        </div>
+                        <div></div>
+                        <div>
+                            <hr>
+                            <img src="assets/proyectos/portfolio/DSC00925.jpg" alt="Izakaya 4">
+                            <div class="project-desc-block">
+                                <p data-i18n="project2_desc">Para <strong>Izakaya</strong> creamos un universo de contenido que captura la esencia de la experiencia a través de una mirada cuidada y sensorial. Un lenguaje visual que no solo muestra la propuesta gastronómica, sino que transmite su carácter, su ritmo y su personalidad mucho antes del primer bocado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-entry fade-in">
+                    <div class="project-row">
+                        <div>
+                            <div class="project-heading">
+                                <h3 data-i18n="project7_title">Captain Hook</h3>
+                                <p class="project-tagline" data-i18n="project7_tagline">Gastronomía con el mar como telón de fondo.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC08664.jpg" alt="Captain Hook 1">
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC08737.jpg" alt="Captain Hook 2">
+                        </div>
+                    </div>
+                    <div class="project-row">
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC08844.jpg" alt="Captain Hook 3">
+                        </div>
+                        <div></div>
+                        <div>
+                            <hr>
+                            <img src="assets/proyectos/placeholder-captainhook-2.svg" alt="Captain Hook 4">
+                            <div class="project-desc-block">
+                                <p data-i18n="project7_desc">Para <strong>Captain Hook</strong> desarrollamos la estrategia de redes sociales, creamos el contenido y gestionamos campañas de Meta Ads. Una comunicación pensada para construir una presencia digital sólida, conectar con su público y amplificar su alcance durante la temporada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-entry fade-in">
+                    <div class="project-row">
+                        <div>
+                            <div class="project-heading">
+                                <h3 data-i18n="project3_title">Burc</h3>
+                                <p class="project-tagline" data-i18n="project3_tagline">Donde la gastronomía y el verano se encuentran.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC03214.jpg" alt="Burc 1">
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC03374.jpg" alt="Burc 2">
+                        </div>
+                    </div>
+                    <div class="project-row">
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC03597.jpg" alt="Burc 3">
+                        </div>
+                        <div></div>
+                        <div>
+                            <hr>
+                            <img src="assets/proyectos/portfolio/DSC03366.jpg" alt="Burc 4">
+                            <div class="project-desc-block">
+                                <p data-i18n="project3_desc">Para <strong>Burc</strong> gestionamos su presencia en redes sociales durante la temporada de verano, desarrollando contenido y campañas de Meta Ads para amplificar su alcance y reforzar su presencia digital.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-entry fade-in">
+                    <div class="project-row">
+                        <div>
+                            <div class="project-heading">
+                                <h3 data-i18n="project4_title">Nou</h3>
+                                <p class="project-tagline" data-i18n="project4_tagline">Una hamburguesería con una identidad propia.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC04129.jpg" alt="Nou 1">
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC04228.jpg" alt="Nou 2">
+                        </div>
+                    </div>
+                    <div class="project-row">
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC03970.jpg" alt="Nou 3">
+                        </div>
+                        <div></div>
+                        <div>
+                            <hr>
+                            <img src="assets/proyectos/portfolio/DSC04660.jpg" alt="Nou 4">
+                            <div class="project-desc-block">
+                                <p data-i18n="project4_desc">Para <strong>Nou</strong> creamos su universo de contenido y campañas de Meta Ads. Construimos una comunicación visual coherente con la marca, orientada a amplificar su presencia y alcance digital.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-category-block">
+                <div class="project-category-header">
+                    <hr>
+                    <span class="project-category" data-i18n="cat_golf">Golf</span>
+                    <hr>
+                </div>
+                <div class="project-entry fade-in">
+                    <div class="project-row">
+                        <div>
+                            <div class="project-heading">
+                                <h3 data-i18n="project5_title">The Battle of Stars</h3>
+                                <p class="project-tagline" data-i18n="project5_tagline">Cuando el deporte se une por algo más grande.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC06115.JPG" alt="The Battle of Stars 1">
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC05192.JPG" alt="The Battle of Stars 2">
+                        </div>
+                    </div>
+                    <div class="project-row">
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC05703.JPG" alt="The Battle of Stars 3">
+                        </div>
+                        <div></div>
+                        <div>
+                            <hr>
+                            <img src="assets/proyectos/portfolio/DSC04981.JPG" alt="The Battle of Stars 4">
+                            <div class="project-desc-block">
+                                <p data-i18n="project5_desc">Para <strong>The Battle of Stars</strong> desarrollamos y gestionamos su comunicación digital antes, durante y después del torneo. Creamos una narrativa de contenido capaz de capturar la energía del evento y sus protagonistas, amplificando cada momento y trasladando su impacto al entorno digital para dar mayor visibilidad a la lucha contra la ELA y la esclerosis múltiple.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-category-block">
+                <div class="project-category-header">
+                    <hr>
+                    <span class="project-category" data-i18n="cat_moda">Moda</span>
+                    <hr>
+                </div>
+                <div class="project-entry fade-in">
+                    <div class="project-row">
+                        <div>
+                            <div class="project-heading">
+                                <h3 data-i18n="project6_title">Sa Roqueta</h3>
+                                <p class="project-tagline" data-i18n="project6_tagline">Boutique familiar inspirada en el Mediterráneo.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSCF3464.jpg" alt="Sa Roqueta 1">
+                        </div>
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC03853.jpg" alt="Sa Roqueta 2">
+                        </div>
+                    </div>
+                    <div class="project-row">
+                        <div>
+                            <img src="assets/proyectos/portfolio/DSC03678.jpg" alt="Sa Roqueta 3">
+                        </div>
+                        <div></div>
+                        <div>
+                            <hr>
+                            <img src="assets/proyectos/portfolio/DSCF3384.jpg" alt="Sa Roqueta 4">
+                            <div class="project-desc-block">
+                                <p data-i18n="project6_desc">Para <strong>Sa Roqueta</strong> desarrollamos su universo de contenido y gestionamos su presencia en redes sociales, construyendo una narrativa visual que refleja el carácter de la marca y su esencia mediterránea. Una comunicación que pone en valor su identidad, su estilo y su manera de entender la moda, con una mirada cercana y natural.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -875,6 +1214,7 @@
             <div class="footer-links">
                 <ul>
                     <li><a href="#servicios" data-i18n="nav_servicios">Servicios</a></li>
+                    <li><a href="#proyectos" data-i18n="nav_proyectos">Proyectos</a></li>
                     <li><a href="#nosotros" data-i18n="nav_nosotros">Nosotros</a></li>
                     <li><a href="politica-privacidad.html" data-i18n="footer_privacy">Política de Privacidad</a></li>
                     <li><a href="politica-cookies.html" data-i18n="footer_cookies">Política de Cookies</a></li>

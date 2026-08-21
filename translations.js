@@ -3,6 +3,7 @@ const translations = {
         // Navigation
         nav_inicio: "Inicio",
         nav_servicios: "Servicios",
+        nav_proyectos: "Proyectos",
         nav_nosotros: "Nosotros",
         nav_contacto: "Contacto",
 
@@ -10,6 +11,7 @@ const translations = {
         hero_title: "Contamos la historia de tu negocio para que te recuerden.",
         hero_subtitle: "Contamos la historia de tu negocio para que te recuerden.",
         hero_description: "Nada de publicar por publicar. Analizamos tu negocio y tu público para crear estrategias de contenido que conecten.",
+        hero_cta: "Proyectos",
 
         // Services Section
         services_title: "Nuestros Servicios",
@@ -34,6 +36,40 @@ const translations = {
 
         // Clients Section
         clients_title: "Ya han confiado en nosotros",
+
+        // Projects Section
+
+        cat_restauracion: "Restauración",
+        cat_golf: "Golf",
+        cat_moda: "Moda",
+
+        project1_title: "Mallorca Restaurant Week",
+        project1_tagline: "Uno de los grandes encuentros gastronómicos de la isla, que reúne una selección de las propuestas más destacadas de Mallorca.",
+        project1_desc: "Para <strong>Mallorca Restaurant Week</strong> 2026 gestionamos su presencia digital, desde la estrategia en redes sociales hasta la planificación y gestión de campañas en Meta Ads. Una comunicación diseñada para amplificar el alcance de la iniciativa y conectar cada propuesta gastronómica con su público.",
+
+        project2_title: "Izakaya",
+        project2_tagline: "Alta gastronomía japonesa en el corazón de Palma.",
+        project2_desc: "Para <strong>Izakaya</strong> creamos un universo de contenido que captura la esencia de la experiencia a través de una mirada cuidada y sensorial. Un lenguaje visual que no solo muestra la propuesta gastronómica, sino que transmite su carácter, su ritmo y su personalidad mucho antes del primer bocado.",
+
+        project3_title: "Burc",
+        project3_tagline: "Donde la gastronomía y el verano se encuentran.",
+        project3_desc: "Para <strong>Burc</strong> gestionamos su presencia en redes sociales durante la temporada de verano, desarrollando contenido y campañas de Meta Ads para amplificar su alcance y reforzar su presencia digital.",
+
+        project4_title: "Nou",
+        project4_tagline: "Una hamburguesería con una identidad propia.",
+        project4_desc: "Para <strong>Nou</strong> creamos su universo de contenido y campañas de Meta Ads. Construimos una comunicación visual coherente con la marca, orientada a amplificar su presencia y alcance digital.",
+
+        project7_title: "Captain Hook",
+        project7_tagline: "Gastronomía con el mar como telón de fondo.",
+        project7_desc: "Para <strong>Captain Hook</strong> desarrollamos la estrategia de redes sociales, creamos el contenido y gestionamos campañas de Meta Ads. Una comunicación pensada para construir una presencia digital sólida, conectar con su público y amplificar su alcance durante la temporada.",
+
+        project5_title: "The Battle of Stars",
+        project5_tagline: "Cuando el deporte se une por algo más grande.",
+        project5_desc: "Para <strong>The Battle of Stars</strong> desarrollamos y gestionamos su comunicación digital antes, durante y después del torneo. Creamos una narrativa de contenido capaz de capturar la energía del evento y sus protagonistas, amplificando cada momento y trasladando su impacto al entorno digital para dar mayor visibilidad a la lucha contra la ELA y la esclerosis múltiple.",
+
+        project6_title: "Sa Roqueta",
+        project6_tagline: "Boutique familiar inspirada en el Mediterráneo.",
+        project6_desc: "Para <strong>Sa Roqueta</strong> desarrollamos su universo de contenido y gestionamos su presencia en redes sociales, construyendo una narrativa visual que refleja el carácter de la marca y su esencia mediterránea. Una comunicación que pone en valor su identidad, su estilo y su manera de entender la moda, con una mirada cercana y natural.",
 
         // CTA Section
         cta_title: "¿Quieres saber más?<br><strong>¡Contáctanos!</strong>",
@@ -158,6 +194,7 @@ const translations = {
         // Navigation
         nav_inicio: "Home",
         nav_servicios: "Services",
+        nav_proyectos: "Projects",
         nav_nosotros: "About Us",
         nav_contacto: "Contact",
 
@@ -165,6 +202,7 @@ const translations = {
         hero_title: "We craft your brand's story to captivate and endure.",
         hero_subtitle: "We craft your brand's story to captivate and endure.",
         hero_description: "Nothing is published without purpose. We take the time to understand your business and your audience, creating refined content strategies that build meaningful connections.",
+        hero_cta: "Projects",
 
         // Services Section
         services_title: "Curated Services",
@@ -189,6 +227,40 @@ const translations = {
 
         // Clients Section
         clients_title: "They have already trusted us",
+
+        // Projects Section
+
+        cat_restauracion: "Restaurant & Dining",
+        cat_golf: "Golf",
+        cat_moda: "Fashion",
+
+        project1_title: "Mallorca Restaurant Week",
+        project1_tagline: "One of the island's great gastronomic gatherings, bringing together a selection of Mallorca's most outstanding culinary offerings.",
+        project1_desc: "For <strong>Mallorca Restaurant Week</strong> 2026 we managed its digital presence, from social media strategy to the planning and management of Meta Ads campaigns. Communication designed to amplify the reach of the initiative and connect every culinary offering with its audience.",
+
+        project2_title: "Izakaya",
+        project2_tagline: "Fine Japanese dining in the heart of Palma.",
+        project2_desc: "For <strong>Izakaya</strong> we created a content universe that captures the essence of the experience through a careful, sensory lens. A visual language that doesn't just showcase the culinary offering, but conveys its character, rhythm, and personality long before the first bite.",
+
+        project3_title: "Burc",
+        project3_tagline: "Where gastronomy and summer meet.",
+        project3_desc: "For <strong>Burc</strong> we managed its social media presence throughout the summer season, developing content and Meta Ads campaigns to amplify its reach and strengthen its digital presence.",
+
+        project4_title: "Nou",
+        project4_tagline: "A burger joint with an identity of its own.",
+        project4_desc: "For <strong>Nou</strong> we created its content universe and Meta Ads campaigns. We built a visual communication consistent with the brand, aimed at amplifying its digital presence and reach.",
+
+        project7_title: "Captain Hook",
+        project7_tagline: "Gastronomy with the sea as its backdrop.",
+        project7_desc: "For <strong>Captain Hook</strong> we developed the social media strategy, created the content, and managed Meta Ads campaigns. Communication designed to build a strong digital presence, connect with its audience, and amplify its reach throughout the season.",
+
+        project5_title: "The Battle of Stars",
+        project5_tagline: "When sport comes together for something bigger.",
+        project5_desc: "For <strong>The Battle of Stars</strong> we developed and managed its digital communication before, during, and after the tournament. We created a content narrative capable of capturing the energy of the event and its protagonists, amplifying every moment and carrying its impact into the digital space to raise greater visibility for the fight against ALS and multiple sclerosis.",
+
+        project6_title: "Sa Roqueta",
+        project6_tagline: "A family boutique inspired by the Mediterranean.",
+        project6_desc: "For <strong>Sa Roqueta</strong> we developed its content universe and managed its social media presence, building a visual narrative that reflects the brand's character and Mediterranean essence. Communication that showcases its identity, style, and its own way of understanding fashion, with a close and natural approach.",
 
         // CTA Section
         cta_title: "Want to know more?<br><strong>Reach out now.</strong>",
