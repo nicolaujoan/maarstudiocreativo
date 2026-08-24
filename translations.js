@@ -44,32 +44,32 @@ const translations = {
         cat_moda: "Moda",
 
         project1_title: "Mallorca Restaurant Week",
-        project1_tagline: "Uno de los grandes encuentros gastronómicos de la isla, que reúne una selección de las propuestas más destacadas de Mallorca.",
-        project1_desc: "Para <strong>Mallorca Restaurant Week</strong> 2026 gestionamos su presencia digital, desde la estrategia en redes sociales hasta la planificación y gestión de campañas en Meta Ads. Una comunicación diseñada para amplificar el alcance de la iniciativa y conectar cada propuesta gastronómica con su público.",
+        project1_tagline: "Uno de los grandes encuentros gastronómicos de Mallorca.",
+        project1_desc: "Para <strong>Mallorca Restaurant Week</strong> 2026 gestionamos su presencia digital, desde la estrategia en redes sociales hasta las campañas de Meta Ads. Una comunicación pensada para ampliar el alcance del evento y conectar cada propuesta gastronómica con su público.",
 
         project2_title: "Izakaya",
         project2_tagline: "Alta gastronomía japonesa en el corazón de Palma.",
-        project2_desc: "Para <strong>Izakaya</strong> creamos un universo de contenido que captura la esencia de la experiencia a través de una mirada cuidada y sensorial. Un lenguaje visual que no solo muestra la propuesta gastronómica, sino que transmite su carácter, su ritmo y su personalidad mucho antes del primer bocado.",
+        project2_desc: "Para <strong>Izakaya</strong> creamos un universo de contenido que captura la esencia de su experiencia gastronómica. Una narrativa visual cuidada que transmite su carácter, ritmo y personalidad antes del primer bocado.",
 
         project3_title: "Burc",
         project3_tagline: "Donde la gastronomía y el verano se encuentran.",
-        project3_desc: "Para <strong>Burc</strong> gestionamos su presencia en redes sociales durante la temporada de verano, desarrollando contenido y campañas de Meta Ads para amplificar su alcance y reforzar su presencia digital.",
+        project3_desc: "Para <strong>Burc</strong> diseñamos y ejecutamos la estrategia digital en redes sociales. Desarrollamos contenido y gestionamos campañas de Meta Ads, creando una comunicación de marca coherente, atractiva y alineada con su identidad.",
 
         project4_title: "Nou",
         project4_tagline: "Una hamburguesería con una identidad propia.",
-        project4_desc: "Para <strong>Nou</strong> creamos su universo de contenido y campañas de Meta Ads. Construimos una comunicación visual coherente con la marca, orientada a amplificar su presencia y alcance digital.",
+        project4_desc: "Para <strong>Nou</strong> desarrollamos una estrategia de contenido junto a la gestión de campañas de Meta Ads. Construimos un lenguaje visual propio, alineado con la identidad del restaurante, para consolidar su presencia digital y reforzar su visibilidad entre nuevas audiencias.",
 
         project7_title: "Captain Hook",
-        project7_tagline: "Gastronomía con el mar como telón de fondo.",
-        project7_desc: "Para <strong>Captain Hook</strong> desarrollamos la estrategia de redes sociales, creamos el contenido y gestionamos campañas de Meta Ads. Una comunicación pensada para construir una presencia digital sólida, conectar con su público y amplificar su alcance durante la temporada.",
+        project7_tagline: "Gastronomía frente al Mediterráneo.",
+        project7_desc: "Para <strong>Captain Hook</strong> desarrollamos su estrategia de redes sociales, creamos contenido y gestionamos campañas de Meta Ads. Un enfoque de marketing digital orientado a reforzar su presencia online, conectar con su audiencia y aumentar su alcance durante la temporada.",
 
         project5_title: "The Battle of Stars",
-        project5_tagline: "Cuando el deporte se une por algo más grande.",
-        project5_desc: "Para <strong>The Battle of Stars</strong> desarrollamos y gestionamos su comunicación digital antes, durante y después del torneo. Creamos una narrativa de contenido capaz de capturar la energía del evento y sus protagonistas, amplificando cada momento y trasladando su impacto al entorno digital para dar mayor visibilidad a la lucha contra la ELA y la esclerosis múltiple.",
+        project5_tagline: "Golf con un propósito que nos une.",
+        project5_desc: "Para <strong>The Battle of Stars</strong> desarrollamos y gestionamos su comunicación digital antes, durante y después del torneo. Creamos una narrativa de contenido capaz de transmitir la energía del evento, poner en valor a sus protagonistas y extender su impacto más allá del campo. Una estrategia de comunicación enfocada en dar visibilidad a la lucha contra la ELA y la esclerosis múltiple.",
 
         project6_title: "Sa Roqueta",
         project6_tagline: "Boutique familiar inspirada en el Mediterráneo.",
-        project6_desc: "Para <strong>Sa Roqueta</strong> desarrollamos su universo de contenido y gestionamos su presencia en redes sociales, construyendo una narrativa visual que refleja el carácter de la marca y su esencia mediterránea. Una comunicación que pone en valor su identidad, su estilo y su manera de entender la moda, con una mirada cercana y natural.",
+        project6_desc: "Para <strong>Sa Roqueta</strong> definimos una línea de contenido propia y gestionamos su comunicación en redes sociales. Una propuesta visual inspirada en el Mediterráneo que transmite el carácter cercano de la boutique y su particular forma de entender la moda.",
 
         // CTA Section
         cta_title: "¿Quieres saber más?<br><strong>¡Contáctanos!</strong>",
@@ -235,32 +235,32 @@ const translations = {
         cat_moda: "Fashion",
 
         project1_title: "Mallorca Restaurant Week",
-        project1_tagline: "One of the island's great gastronomic gatherings, bringing together a selection of Mallorca's most outstanding culinary offerings.",
-        project1_desc: "For <strong>Mallorca Restaurant Week</strong> 2026 we managed its digital presence, from social media strategy to the planning and management of Meta Ads campaigns. Communication designed to amplify the reach of the initiative and connect every culinary offering with its audience.",
+        project1_tagline: "One of Mallorca's leading gastronomic events.",
+        project1_desc: "For <strong>Mallorca Restaurant Week</strong> 2026, we shaped and managed its digital presence, from social media strategy to targeted Meta Ads campaigns. We developed a considered communication strategy to extend the event's reach and connect each culinary experience with the right audience.",
 
         project2_title: "Izakaya",
-        project2_tagline: "Fine Japanese dining in the heart of Palma.",
-        project2_desc: "For <strong>Izakaya</strong> we created a content universe that captures the essence of the experience through a careful, sensory lens. A visual language that doesn't just showcase the culinary offering, but conveys its character, rhythm, and personality long before the first bite.",
+        project2_tagline: "Japanese fine dining in the heart of Palma.",
+        project2_desc: "For <strong>Izakaya</strong>, we created a content direction that captured the essence of its dining experience. We developed a carefully considered visual narrative that conveyed its character, rhythm and personality before the first bite.",
 
         project3_title: "Burc",
-        project3_tagline: "Where gastronomy and summer meet.",
-        project3_desc: "For <strong>Burc</strong> we managed its social media presence throughout the summer season, developing content and Meta Ads campaigns to amplify its reach and strengthen its digital presence.",
+        project3_tagline: "Where gastronomy and summer come together.",
+        project3_desc: "For <strong>Burc</strong>, we designed and executed its social media strategy. We developed content and managed Meta Ads campaigns, creating a cohesive and engaging brand presence aligned with its identity.",
 
         project4_title: "Nou",
-        project4_tagline: "A burger joint with an identity of its own.",
-        project4_desc: "For <strong>Nou</strong> we created its content universe and Meta Ads campaigns. We built a visual communication consistent with the brand, aimed at amplifying its digital presence and reach.",
+        project4_tagline: "A burger spot with a distinctive identity.",
+        project4_desc: "For <strong>Nou</strong>, we developed a content strategy alongside the management of Meta Ads campaigns. We created a distinctive visual language aligned with the restaurant's identity, strengthening its digital presence and increasing visibility among new audiences.",
 
         project7_title: "Captain Hook",
-        project7_tagline: "Gastronomy with the sea as its backdrop.",
-        project7_desc: "For <strong>Captain Hook</strong> we developed the social media strategy, created the content, and managed Meta Ads campaigns. Communication designed to build a strong digital presence, connect with its audience, and amplify its reach throughout the season.",
+        project7_tagline: "Mediterranean gastronomy by the sea.",
+        project7_desc: "For <strong>Captain Hook</strong>, we developed its social media strategy, created content and managed Meta Ads campaigns. Our digital marketing approach strengthened its online presence, engaged its audience and extended its reach throughout the season.",
 
         project5_title: "The Battle of Stars",
-        project5_tagline: "When sport comes together for something bigger.",
-        project5_desc: "For <strong>The Battle of Stars</strong> we developed and managed its digital communication before, during, and after the tournament. We created a content narrative capable of capturing the energy of the event and its protagonists, amplifying every moment and carrying its impact into the digital space to raise greater visibility for the fight against ALS and multiple sclerosis.",
+        project5_tagline: "Golf with a purpose that brings us together.",
+        project5_desc: "For <strong>The Battle of Stars</strong>, we developed and managed its digital communication before, during and after the tournament. We crafted a content narrative that captured the energy of the event, highlighted its key figures and extended its impact beyond the course. Our communication strategy helped raise awareness of the fight against ALS and multiple sclerosis.",
 
         project6_title: "Sa Roqueta",
-        project6_tagline: "A family boutique inspired by the Mediterranean.",
-        project6_desc: "For <strong>Sa Roqueta</strong> we developed its content universe and managed its social media presence, building a visual narrative that reflects the brand's character and Mediterranean essence. Communication that showcases its identity, style, and its own way of understanding fashion, with a close and natural approach.",
+        project6_tagline: "A family-run boutique inspired by the Mediterranean.",
+        project6_desc: "For <strong>Sa Roqueta</strong>, we defined a distinctive content direction and managed its social media communication. We created a visual approach inspired by the Mediterranean, capturing the boutique's welcoming character and its distinctive take on fashion.",
 
         // CTA Section
         cta_title: "Want to know more?<br><strong>Reach out now.</strong>",
