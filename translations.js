@@ -59,7 +59,7 @@ const translations = {
         project4_tagline: "Una hamburguesería con una identidad propia.",
         project4_desc: "Para <strong>Nou</strong> desarrollamos una estrategia de contenido junto a la gestión de campañas de Meta Ads. Construimos un lenguaje visual propio, alineado con la identidad del restaurante, para consolidar su presencia digital y reforzar su visibilidad entre nuevas audiencias.",
 
-        project7_title: "Captain Hook",
+        project7_title: "Capitan Hook",
         project7_tagline: "Gastronomía frente al Mediterráneo.",
         project7_desc: "Para <strong>Captain Hook</strong> desarrollamos su estrategia de redes sociales, creamos contenido y gestionamos campañas de Meta Ads. Un enfoque de marketing digital orientado a reforzar su presencia online, conectar con su audiencia y aumentar su alcance durante la temporada.",
 
@@ -250,7 +250,7 @@ const translations = {
         project4_tagline: "A burger spot with a distinctive identity.",
         project4_desc: "For <strong>Nou</strong>, we developed a content strategy alongside the management of Meta Ads campaigns. We created a distinctive visual language aligned with the restaurant's identity, strengthening its digital presence and increasing visibility among new audiences.",
 
-        project7_title: "Captain Hook",
+        project7_title: "Capitan Hook",
         project7_tagline: "Mediterranean gastronomy by the sea.",
         project7_desc: "For <strong>Captain Hook</strong>, we developed its social media strategy, created content and managed Meta Ads campaigns. Our digital marketing approach strengthened its online presence, engaged its audience and extended its reach throughout the season.",
 
