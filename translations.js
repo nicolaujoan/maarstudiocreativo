@@ -61,7 +61,7 @@ const translations = {
 
         project7_title: "Capitan Hook",
         project7_tagline: "Gastronomía frente al Mediterráneo.",
-        project7_desc: "Para <strong>Captain Hook</strong> desarrollamos su estrategia de redes sociales, creamos contenido y gestionamos campañas de Meta Ads. Un enfoque de marketing digital orientado a reforzar su presencia online, conectar con su audiencia y aumentar su alcance durante la temporada.",
+        project7_desc: "Para <strong>Capitan Hook</strong> desarrollamos su estrategia de redes sociales, creamos contenido y gestionamos campañas de Meta Ads. Un enfoque de marketing digital orientado a reforzar su presencia online, conectar con su audiencia y aumentar su alcance durante la temporada.",
 
         project5_title: "The Battle of Stars",
         project5_tagline: "Golf con un propósito que nos une.",
@@ -252,7 +252,7 @@ const translations = {
 
         project7_title: "Capitan Hook",
         project7_tagline: "Mediterranean gastronomy by the sea.",
-        project7_desc: "For <strong>Captain Hook</strong>, we developed its social media strategy, created content and managed Meta Ads campaigns. Our digital marketing approach strengthened its online presence, engaged its audience and extended its reach throughout the season.",
+        project7_desc: "For <strong>Capitan Hook</strong>, we developed its social media strategy, created content and managed Meta Ads campaigns. Our digital marketing approach strengthened its online presence, engaged its audience and extended its reach throughout the season.",
 
         project5_title: "The Battle of Stars",
         project5_tagline: "Golf with a purpose that brings us together.",
