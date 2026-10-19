@@ -1,0 +1,46 @@
+# Archivos del repo que no se publican en la web
+
+# Documentación interna
+roadmap.md
+.vscode
+
+# Assets que la web no usa
+assets/proyectos/Proyectos*web.pdf
+assets/cambios_consultas.pdf
+assets/paleta_cromatica.pdf
+assets/maarstudio.webm
+assets/parallax.webm
+assets/2.png
+assets/3.png
+assets/6.png
+assets/deslizante.jpg
+assets/image00003.jpeg
+assets/nosotros.jpg
+assets/dental.jpeg
+assets/dental.png
+assets/essencies.jpeg
+assets/essencies.png
+assets/eva.jpeg
+assets/eva.png
+assets/np.jpeg
+assets/np.png
+assets/np_white.png
+assets/sushi.jpeg
+assets/sushi.png
+assets/logo1.jpeg
+assets/logo1.png
+assets/logo2.jpeg
+assets/logo2.png
+assets/logo3.jpeg
+assets/logo3.png
+assets/logo4.jpeg
+assets/logo4.png
+assets/logo5.jpeg
+assets/logo5.png
+assets/logo6.jpeg
+assets/logo6.png
+assets/logo7.jpeg
+assets/logo7.png
+assets/logo8.jpeg
+assets/logo8.png
+assets/logo9.jpeg
